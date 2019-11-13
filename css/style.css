@@ -1,0 +1,531 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-weight: 300;
+    font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: subpixel-antialiased;
+    /*-moz-osx-font-smoothing: grayscale;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    line-height: 1.2;
+    letter-spacing: 0.02rem;
+}
+
+.hide-SEO {
+    display: block !important;
+    height: 0 !important;
+    width: 0 !important;
+    position: absolute !important;
+    top: -99px;
+    left: -99px;
+    overflow: hidden;
+    border: 0 !important;
+}
+
+body {
+    opacity: 1;
+    background: #000000;
+    transition: 0.5s opacity ease;
+}
+
+.wrapper {
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
+    padding-top: 60px;
+    /* header height */
+    padding-bottom: 40px;
+    /* footer height */
+}
+
+h1,
+h1 span,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+    font-family: 'Merriweather', Times, serif;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+h3 {
+    font-size: 1rem;
+}
+
+em {
+    font-weight: inherit;
+}
+
+strong {
+    font-weight: 600;
+}
+
+hr {
+    border: 0;
+    background: #dcdcdc;
+    margin: 2rem 0;
+    height: 1px;
+}
+
+
+/* LAYOUTS */
+.container {
+    padding: 0 16px;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.container:after,
+.clearfix:after {
+    content: '';
+    clear: both;
+    display: table;
+}
+
+.welcome {
+    padding-bottom: 6px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.welcome h1 {
+    margin-top: 0;
+    margin-bottom: 0.25rem;
+}
+
+.blue-color {
+    color: #0984e3 !important;
+}
+
+
+/* HEADER */
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.8);
+    height: 60px;
+}
+
+#header .container {
+    font-size: 0;
+    text-align: center;
+}
+
+#header a {
+    display: inline-block;
+    vertical-align: middle;
+    padding: 0 16px;
+    color: #eeeeee;
+    text-decoration: none;
+    height: 60px;
+    line-height: 60px;
+    transition: color 0.25s ease;
+}
+
+#header a:hover,
+#header a.active {
+    color: #0984e3;
+}
+
+/* https://pixabay.com/vectors/solar-eclipse-eclipse-sun-flare-152834/ */
+.logo {
+    position: relative;
+    z-index: 0;
+    letter-spacing: 0.4rem;
+    font-size: 1.4rem;
+    font-variant: small-caps;
+}
+
+.logo > img {
+    display: inline-block;
+    vertical-align: middle;
+    width: 17px;
+    height: 17px;
+    margin-bottom: 2px;
+}
+
+#header .logo {
+    border-top: 2px solid #0984e3;
+    border-bottom: 2px solid #0984e3;
+}
+
+.social {
+    display: inline-block;
+    font-size: 14px;
+    text-align: center;
+    width: 50px;
+}
+
+
+/* MAIN */
+#main {
+    padding: 0 16px;
+}
+
+#main a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.25s ease;
+}
+
+#main a:hover {
+    color: #0984e3;
+}
+
+#main .content {
+    position: relative;
+    z-index: 1;
+    padding: 32px;
+    margin-bottom: 32px;
+    background: #eeeeee;
+    color: #313A40;
+}
+
+#main .content p {
+    font-size: 17px;
+    margin-bottom: 16px;
+    letter-spacing: normal;
+    line-height: 1.6;
+}
+
+
+/* HERO */
+.hero {
+    position: relative;
+    height: 320px;
+    background-color: black;
+    background-image: url('../img/solar-eclipse-152834-min.png');
+    background-repeat: no-repeat;
+    background-size: 400px auto;
+    background-position: center center;
+}
+
+.hero-content {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    text-align: center;
+    font-size: 22px;
+}
+
+.hero-content p {
+    font-size: 14px;
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    color: #f5f5f5;
+}
+
+
+/* FOOTER */
+#footer {
+    background: #212738;
+    color: rgba(255, 255, 255, 0.75);
+    height: 40px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+#footer .logo {
+    color: #0984e3;
+}
+
+#footer .logo > img {
+    margin-right: 18px;
+}
+
+#footer .container {
+    display: flex;
+    font-size: 0;
+}
+
+#footer .logo,
+#footer .copyright,
+#footer nav {
+    padding: 0 16px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 33.33333%;
+    height: 40px;
+    line-height: 40px;
+}
+
+#footer .logo {
+    padding-left: 0;
+}
+
+#footer .copyright {
+    text-align: center;
+}
+
+#footer nav {
+    padding-right: 0;
+    text-align: right;
+}
+
+#footer a,
+#footer span {
+    text-decoration: none;
+    font-size: 14px;
+    color: inherit;
+    transition: color 0.25s ease;
+}
+
+#footer a:hover {
+    color: #0984e3;
+}
+
+#footer .social {
+    height: 40px;
+    line-height: 40px;
+    text-align: right;
+}
+
+.scrollTop {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 50px;
+    right: 10px;
+    text-align: center !important;
+    border-radius: 50%;
+    height: 40px !important;
+    width: 40px !important;
+    line-height: 40px !important;
+    background-color: #0984e3 !important;
+    color: #ffffff !important;
+    transition: all 0.25s ease !important;
+    opacity: 0.75;
+}
+
+.scrollTop:hover {
+    opacity: 1;
+}
+
+
+/* GRID SYSTEM */
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -1rem;
+    margin-right: -1rem;
+}
+
+.flex-col {
+    padding: 1rem;
+}
+
+.flex-quarters .flex-col {
+    width: 25%;
+}
+
+
+/* INSPIRATIONAL BOARDS */
+.board {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+}
+
+.board-item {
+    padding: 0.5rem;
+    width: 50%;
+}
+
+.board-wrapper {
+    position: relative;
+    padding-top: 40%;
+    width: 100%;
+}
+
+.board iframe {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.board-title {
+    padding-top: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 8px;
+    border-top: 1px solid #dcdcdc;
+}
+
+.board-btn {
+    display: inline-block;
+    padding: 0.5rem 1rem;
+    background-color: #0984e3;
+    color: #ffffff !important;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    font-size: 10px;
+    transition: all 0.25s ease !important;
+}
+
+.board-btn:hover {
+    background: #075FA3;
+}
+
+.soundboard {}
+
+.moodboard-img {
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    border-radius: 10px;
+}
+
+.pixabay {
+    margin: 3px 15px 5px 0;
+    font-size: 12px;
+    line-height: 1.7;
+    color: #555;
+    display: block;
+    padding: 9px 12px 6px;
+    border: 1px solid #ccc;
+    max-width: 110px;
+}
+
+.bookboard blockquote {
+    background: #F8F8FA;
+    border-radius: 10px;
+    padding: 1rem;
+    height: 100%;
+}
+
+.bookboard blockquote p {
+    position: relative;
+    padding: 0 14px;
+}
+
+.bookboard blockquote p:before,
+.bookboard blockquote p:after {
+    font-size: 22px;
+    font-weight: 600;
+    color: #bbbbbb;
+}
+
+.bookboard blockquote p:before {
+    content: "\201C";
+    left: -10px;
+    top: -18px;
+    position: absolute;
+    font-size: 50px;
+}
+
+.bookboard blockquote p:after {
+    content: "\201D";
+}
+
+.bookboard blockquote footer {
+    position: relative;
+    font-style: italic;
+    font-size: 14px;
+    padding-left: 14px;
+    line-height: 1.6;
+}
+
+.bookboard blockquote footer:before {
+    content: '\2013 ';
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+
+/* RESPONSIVE */
+@media only screen and (max-width: 991px) {
+    .hide-mobile {
+        display: none !important;
+    }
+
+    .social {
+        width: 40px;
+        padding: 0 !important;
+    }
+
+    .flex-quarters .flex-col {
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    #footer .copyright {
+        width: 24%;
+    }
+
+    #footer .logo,
+    #footer nav {
+        width: 38%;
+    }
+
+    #footer .logo,
+    #footer .copyright,
+    #footer nav {
+        padding: 0;
+    }
+
+    .board-item {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        font-size: 1rem;
+    }
+
+    .logo > img {
+        height: 14px;
+        width: 14px;
+    }
+
+    .social {
+        width: 30px;
+    }
+
+    .flex-quarters .flex-col {
+        width: 100%;
+    }
+
+    .board-wrapper {
+        padding-top: 60%;
+    }
+}

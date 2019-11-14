@@ -3,7 +3,7 @@ $(function () {
 
     // LOAD INCLUDES
     var m = '<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1">';
-    var s = '<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i|Montserrat:300,300i,600,600i&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">';
+    var s = '<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i|Montserrat:300,300i,500,500i&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">';
     var v = 'img/favicon.png';
     var c = 'css/style.css';
     var h = 'includes/header.html';
@@ -64,7 +64,9 @@ $(function () {
                 $.getJSON(URL, function (data) {
                     if (parseInt(data.totalHits) > 0) {
                         $.each(data.hits, function (i, hit) {
-                            $('.moodboard').append('<div class="board-item"><div class="board-wrapper"><a href="' + hit.pageURL + '" target="_blank" class="moodboard-img" style="background-image:url(' + hit.largeImageURL + ');"><span class="hide-SEO">Moodboard Image</span></a></div></div>');
+                            $('.moodboard').append('<div class="board-item"><div class="board-wrapper"><a href="' + hit.pageURL + '" target="_blank" class="moodboard-img" style="background-image:url(' + hit.webformatURL + ');"><span class="hide-SEO">Moodboard Image</span></a></div></div>');
+                            
+                            //console.log(hit.largeImageURL);
                         });
                     }
                 });

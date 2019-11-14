@@ -5,7 +5,7 @@ $(function () {
     var m = '<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1">';
     var s = '<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i|Montserrat:300,300i,500,500i&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">';
     var v = 'img/favicon.png';
-    var c = 'css/style.css';
+    var c = 'css/style.css?v=1.1.1';
     var h = 'includes/header.html';
     var f = 'includes/footer.html';
     var g = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-152375493-1"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-152375493-1");</script>';

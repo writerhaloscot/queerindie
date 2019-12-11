@@ -532,10 +532,44 @@ iframe {
     padding: 0.5rem;
     font-size: 18px;
 }
+
 .instagram_gallery > a > img {
     display: block;
     float: none;
     width: 100%;
+}
+
+
+/* PROMOTION */
+
+.promotion {
+    background: #0984e3;
+    padding: 2rem;
+    margin: 24px 0;
+    color: white;
+    text-align: center;
+}
+
+.promotion p {
+    font-size: 1.25rem !important;
+}
+
+.promotion p:first-of-type {
+    margin-bottom: 8px !important;
+}
+
+.promotion p:last-of-type {
+    margin-bottom: 0 !important;
+}
+
+.promotion .button {
+    box-shadow: none;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.promotion .button:hover {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 

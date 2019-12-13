@@ -3,7 +3,7 @@ $(function () {
 
     // LOAD INCLUDES
     var m = '<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1">';
-    var s = '<link href="https://fonts.googleapis.com/css?family=Merriweather:300,300i|Montserrat:300,300i,500,500i&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">';
+    var s = '<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:300|Roboto:300,300i,400&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">';
     var v = 'img/favicon.png';
     var c = 'css/style.css?v=1.1.1';
     var h = 'includes/header.html';

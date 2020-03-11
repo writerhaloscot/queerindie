@@ -175,7 +175,7 @@ iframe {
     font-weight: 500;
     font-size: 40px;
     color: white;
-    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.45), 0 0 100px black, 0 0 200px black, 0 0 400px black;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
 }
 
 .hero p:last-of-type {

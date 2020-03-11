@@ -169,26 +169,48 @@ iframe {
     margin: 0 0 20px;
 }
 
+.hero .container {
+    max-width: 100%;
+    padding: 0;
+}
+
 .hero p {
     position: relative;
     z-index: 1;
     font-weight: 500;
-    font-size: 40px;
+    font-size: 30px;
     color: white;
     text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
+    background: rgba(0,0,0,0.5);
+    padding: 16px;
+}
+
+.hero p:first-of-type {
+    padding-bottom: 0;
 }
 
 .hero p:last-of-type {
-    font-size: 30px;
+    font-size: 23px;
     font-style: italic;
+    padding-top: 0;
 }
 
 .hero a {
     color: white;
+    background: black;
+    text-decoration: none;
+    padding: 11px 16px;
+    display: inline-block;
+    font-size: 20px;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    vertical-align: middle;
+    margin-right: 8px;
 }
 
 .hero a:hover {
-    color: rgba(255, 255, 255, 0.75);
+    background: blue;
+    color: white;
 }
 
 .flex-row {
@@ -384,10 +406,15 @@ iframe {
         font-size: 40px;
     }
     .hero p {
-        font-size: 22px;
+        font-size: 21px;
     }
     .hero p:last-of-type {
         font-size: 16px;
+    }
+    .hero a {
+        font-size: 14px;
+        padding: 8px 12px;
+        margin-right: 4px;
     }
     .flex-row {
         display: block;

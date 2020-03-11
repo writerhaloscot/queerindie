@@ -154,7 +154,7 @@ iframe {
 }
 
 .hero {
-    padding: 180px 0;
+    padding: 120px 0;
     background-image: url('../img/rainbow-261419-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -166,7 +166,29 @@ iframe {
 
 .hero h1 {
     font-size: 72px;
-    margin: 0;
+    margin: 0 0 20px;
+}
+
+.hero p {
+    position: relative;
+    z-index: 1;
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.45), 0 0 100px black, 0 0 200px black, 0 0 400px black;
+}
+
+.hero p:last-of-type {
+    font-size: 30px;
+    font-style: italic;
+}
+
+.hero a {
+    color: white;
+}
+
+.hero a:hover {
+    color: rgba(255, 255, 255, 0.75);
 }
 
 .flex-row {
@@ -324,7 +346,7 @@ iframe {
 }
 
 @media only screen and (max-width: 768px) {
-    .logo {
+    #header .logo {
         width: 60px;
         margin-bottom: -52px;
     }
@@ -355,6 +377,18 @@ iframe {
 }
 
 @media only screen and (max-width: 600px) {
+    .hide-mobile {
+        display: none !important;
+    }
+    .hero h1 {
+        font-size: 40px;
+    }
+    .hero p {
+        font-size: 22px;
+    }
+    .hero p:last-of-type {
+        font-size: 16px;
+    }
     .flex-row {
         display: block;
         max-width: 400px;

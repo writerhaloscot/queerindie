@@ -7,8 +7,9 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    line-height: 1.2;
-    letter-spacing: 0.02rem;
+    line-height: 1.4;
+    letter-spacing: 0.01rem;
+    font-size: 20px;
 }
 
 .hide-SEO {
@@ -46,28 +47,29 @@ h3,
 h4,
 h5,
 h6 {
-    margin-top: 2rem;
+    margin-top: 1rem;
     margin-bottom: 1rem;
-    font-weight: 500;
-    font-family: 'Raleway', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-family: 'Big Shoulders Text', monospace, serif;
 }
 
 h1 {
-    font-size: 2.25rem;
-}
-
-h2 {
     font-size: 2rem;
 }
 
-h3 {
+h2 {
     font-size: 1.75rem;
+    margin-bottom: 0.5rem;
 }
 
-p {
-    font-size: 22px;
-    line-height: 1.4;
-    font-weight: 300;
+h3 {
+    font-size: 1.5rem;
+}
+
+p,
+ul li {
+    font-size: 19px;
+    font-weight: 400;
 }
 
 em {
@@ -113,11 +115,14 @@ iframe {
 /* HEADER */
 
 #header {
-    /*position: fixed;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;*/
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.65);
+    height: 60px;
+    overflow: hidden;
 }
 
 #header .container {
@@ -127,22 +132,48 @@ iframe {
 
 #header a {
     text-decoration: none;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+    font-weight: 700;
+}
+
+#header a span {
+    font: inherit;
+}
+
+#header a:hover,
+#header a.active {
+    color: greenyellow;
 }
 
 .logo {
     position: relative;
     z-index: 0;
-    display: block;
-    margin: 0 auto -104px;
-    width: 120px;
+    margin: 0 auto;
 }
 
 .logo > img {
     display: block;
-    vertical-align: middle;
     margin: 0 auto;
-    width: 100%;
-    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.45), 0 0 160px rgba(0, 0, 0, 0.4);
+    height: 40px;
+    width: 51px;
+}
+
+#header .inner {
+    color: white;
+    width: 140px;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    font-size: 12px;
+}
+
+#header .inner:first-of-type {
+    text-align: right;
+}
+
+#header .inner:last-of-type {
+    text-align: left;
 }
 
 
@@ -154,19 +185,34 @@ iframe {
 }
 
 .hero {
-    padding: 120px 0;
+    position: relative;
+    border-top: 60px solid black;
+    padding: 110px 0 145px;
     background-image: url('../img/rainbow-261419-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     text-align: center;
-    color: white;
-    text-shadow: 5px 5px 0px rgba(0, 0, 0, 0.45), 0 0 100px black, 0 0 200px black, 0 0 400px black;
+    color: black;
 }
 
 .hero h1 {
-    font-size: 72px;
-    margin: 0 0 20px;
+    font-size: 84px;
+    font-weight: 400;
+    margin: 0;
+    text-shadow: 0 0 100px greenyellow;
+}
+
+.hero.inner-page {
+    min-height: 540px;
+}
+
+.hero.inner-page h1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-shadow: 0 0 50px greenyellow, 0 0 120px greenyellow;
 }
 
 .hero .container {
@@ -174,38 +220,29 @@ iframe {
     padding: 0;
 }
 
-.hero p {
-    position: relative;
-    z-index: 1;
-    font-weight: 500;
-    font-size: 30px;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.6);
-    background: rgba(0,0,0,0.5);
-    padding: 16px;
-}
-
-.hero p:first-of-type {
-    padding-bottom: 0;
-}
-
-.hero p:last-of-type {
-    font-size: 23px;
-    font-style: italic;
-    padding-top: 0;
-}
-
 .hero a {
     color: white;
     background: black;
     text-decoration: none;
-    padding: 11px 16px;
+    padding: 0 16px;
+    display: block;
+    font-size: 15px;
+    line-height: 44px;
+    height: 44px;
     display: inline-block;
-    font-size: 20px;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    vertical-align: middle;
-    margin-right: 8px;
+    letter-spacing: 0.04rem;
+}
+
+.hero a span {
+    font: inherit;
+}
+
+.hero a span.hlt {
+    color: greenyellow;
+    font-weight: 700;
+    letter-spacing: 0.05rem;
+    font-size: inherit;
 }
 
 .hero a:hover {
@@ -214,14 +251,16 @@ iframe {
 }
 
 .flex-row {
+    position: relative;
+    z-index: 1;
     display: flex;
-    margin-left: -16px;
-    margin-right: -16px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 .flex-row > div {
     width: 50%;
-    border: 16px solid white;
+    border: 15px solid white;
 }
 
 .flex-row > div:last-of-type {
@@ -233,12 +272,16 @@ iframe {
     width: 100%;
 }
 
+.flex-row .left h2 {
+    margin-top: 0;
+}
+
 .flex-row .right {
     text-align: right;
 }
 
 .flex-row .right p {
-    max-width: 460px;
+    max-width: 430px;
     margin-right: 0;
     margin-left: auto;
     margin-bottom: 12px;
@@ -246,10 +289,6 @@ iframe {
 
 .flex-row .right h2 {
     margin-top: 10px;
-}
-
-.cta {
-    padding-bottom: 36px;
 }
 
 .lgbtq-header {
@@ -274,9 +313,8 @@ iframe {
     background: black;
     color: white;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
-    font-size: 14px;
-    font-weight: 400;
+    letter-spacing: 0.05rem;
+    font-size: 12px;
     padding: 8px 12px;
     margin-bottom: 4px;
 }
@@ -286,8 +324,11 @@ iframe {
 }
 
 .link {
-    font-weight: 400;
     color: black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 0.02rem;
 }
 
 .link:hover {
@@ -355,6 +396,32 @@ iframe {
     font-weight: 400 !important;
 }
 
+#footer a:hover {
+    color: greenyellow;
+}
+
+.scrollTop {
+    display: block;
+    position: fixed;
+    z-index: 1000;
+    bottom: 10px;
+    right: 10px;
+    text-align: center !important;
+    height: 40px !important;
+    width: 40px !important;
+    line-height: 40px !important;
+    padding-top: 3px;
+    background-color: greenyellow !important;
+    color: #000000 !important;
+    transition: all 0.25s ease !important;
+    opacity: 0.5;
+    box-shadow: 3px 3px 0 black;
+}
+
+.scrollTop:hover {
+    opacity: 1;
+}
+
 
 /* RESPONSIVE */
 
@@ -362,18 +429,20 @@ iframe {
     .hero {
         padding: 100px 0;
     }
+    .hero.inner-page {
+        min-height: 485px;
+    }
     .map {
         min-height: 450px;
     }
 }
 
 @media only screen and (max-width: 768px) {
-    #header .logo {
-        width: 60px;
-        margin-bottom: -52px;
-    }
     .hero {
         padding: 40px 0;
+    }
+    .hero.inner-page {
+        min-height: 326px;
     }
     .hero h1 {
         font-size: 56px;
@@ -402,19 +471,14 @@ iframe {
     .hide-mobile {
         display: none !important;
     }
+    #header .inner {
+        width: 90px;
+    }
     .hero h1 {
         font-size: 40px;
     }
-    .hero p {
-        font-size: 21px;
-    }
-    .hero p:last-of-type {
-        font-size: 16px;
-    }
-    .hero a {
-        font-size: 14px;
-        padding: 8px 12px;
-        margin-right: 4px;
+    .hero.inner-page {
+        min-height: 304px;
     }
     .flex-row {
         display: block;

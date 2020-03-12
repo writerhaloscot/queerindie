@@ -1,5 +1,19 @@
 <div class="container">
     <nav>
-        <a class="logo" href="/"><img src="../img/logo-drew-small-min.jpg" alt="Queer Indie" /></a>
+        <a class="inner" href="https://www.bookcon.com/en/Home/" target="_blank">BookCon<span class="hide-mobile"> 2020</span></a>
+        <a class="logo" href="/"><img src="../img/logo-drew-min.png" alt="Queer Indie" /></a>
+        <a class="inner" href="/authors/"><span class="hide-mobile">Our </span>Authors</a>
     </nav>
 </div>
+
+<script>
+    $(function () {
+        // ACTIVE NAVIGATION CLASS
+        var p = window.location.href;
+        $('#header a.inner').each(function () {
+            if (this.href === p) {
+                $(this).addClass('active');
+            }
+        });
+    });
+</script>

@@ -228,6 +228,10 @@ video {
     min-height: 100%;
 }
 
+.inner-video {
+    display: none;
+}
+
 .hero.inner-page .hero-video {
     opacity: 0.55;
 }

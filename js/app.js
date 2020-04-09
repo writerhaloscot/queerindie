@@ -30,6 +30,30 @@ $(function () {
             scrollTop: '0px'
         });
     });
-    
-    
+
+
+    // LAZY LOAD VIDEO
+    $(document).ready(function () {
+
+        if ($('.hero-video-wrapper').length > 0) {
+            var v = $('.hero-video-wrapper').attr('data-src');
+            var h = '<video class="hero-video" autoplay loop muted preload="metadata"><source src="' + v + '" type="video/mp4"></video>';
+            $('.hero-video-wrapper').html(h);
+            setTimeout(function () {
+                $('.hero-video-wrapper').fadeIn(2000);
+            }, 500);
+        }
+        
+        if ($('.inner-video').length > 0) {
+            var v = $('.inner-video').attr('data-src');
+            var h = '<video autoplay loop muted preload="metadata"><source src="' + v + '" type="video/mp4"></video>';
+            $('.inner-video').html(h);
+            setTimeout(function () {
+                $('.inner-video').fadeIn(2000);
+            }, 500);
+        }
+
+    });
+
+
 });

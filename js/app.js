@@ -60,4 +60,37 @@ $(function () {
     });
 
 
+    // DIRECTORY
+
+    $('.peer-name').on('click', function (e) {
+        e.preventDefault();
+        $(this).parents('.peer').find('.peer-panel').slideToggle(250);
+        $(this).toggleClass('open');
+    });
+
+    $('.qi-lit-expand').on('click', function (e) {
+        e.preventDefault();
+        $('.qi-lit .peer-panel').slideDown(250);
+        $('.qi-lit .peer-name').addClass('open');
+    });
+
+    $('.qi-lit-collapse').on('click', function (e) {
+        e.preventDefault();
+        $('.qi-lit .peer-panel').slideUp(250);
+        $('.qi-lit .peer-name').removeClass('open');
+    });
+
+    $('.qi-friends-expand').on('click', function (e) {
+        e.preventDefault();
+        $('.qi-friends .peer-panel').slideDown(250);
+        $('.qi-friends .peer-name').addClass('open');
+    });
+
+    $('.qi-friends-collapse').on('click', function (e) {
+        e.preventDefault();
+        $('.qi-friends .peer-panel').slideUp(250);
+        $('.qi-friends .peer-name').removeClass('open');
+    });
+
+
 });

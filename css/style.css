@@ -485,6 +485,15 @@ video {
 
 .peer {
     margin-bottom: 12px;
+    width: 100%;
+}
+
+.peer:nth-child(4n + 2) {
+    margin-left: 15px;
+}
+
+.peer:nth-child(4n) {
+    margin-left: -15px;
 }
 
 .peer:last-of-type {
@@ -502,7 +511,10 @@ video {
     position: relative;
     display: block;
     margin-bottom: -4px;
-    padding-right: 34px;
+    padding: 8px;
+    padding-right: 30px;
+    font-weight: 700;
+    border: 4px solid transparent;
 }
 
 .peer-name > i {
@@ -517,8 +529,14 @@ video {
     display: none;
 }
 
+.peer-name:hover {
+    opacity: 0.75;
+}
+
+.peer-name:hover,
 .peer-name.open {
-    background: blue;
+    color: black;
+    border-color: black;
 }
 
 .peer-name.open .fa-minus {
@@ -568,6 +586,11 @@ video {
     text-decoration: none;
 }
 
+.peer-twitter:hover {
+    color: black !important;
+    opacity: 0.5;
+}
+
 .peer-buy {
     position: relative;
     font-style: italic;
@@ -580,6 +603,11 @@ video {
     padding: 8px 9px;
     text-decoration: none;
     width: 41px;
+}
+
+.peer-buy:hover {
+    background: black !important;
+    opacity: 0.5;
 }
 
 .peer-buy > span {
@@ -615,6 +643,76 @@ video {
 .qi-lit .link:last-of-type,
 .qi-friends .link:last-of-type {
     margin-bottom: 16px;
+}
+
+
+/* COLOR CODE QI */
+.qi-lit .peer:nth-child(12n + 1) .peer-name {
+    background: #FFCC00;
+}
+
+.qi-lit .peer:nth-child(12n + 2) .peer-name,
+.qi-lit .peer:nth-child(12n + 12) .peer-name {
+    background: orange;
+}
+
+.qi-lit .peer:nth-child(12n + 3) .peer-name,
+.qi-lit .peer:nth-child(12n + 11) .peer-name {
+    background: darkorange;
+}
+
+.qi-lit .peer:nth-child(12n + 4) .peer-name,
+.qi-lit .peer:nth-child(12n + 10) .peer-name {
+    background: coral;
+}
+
+.qi-lit .peer:nth-child(12n + 5) .peer-name,
+.qi-lit .peer:nth-child(12n + 9) .peer-name {
+    background: tomato;
+}
+
+.qi-lit .peer:nth-child(12n + 6) .peer-name,
+.qi-lit .peer:nth-child(12n + 8) .peer-name {
+    background: orangered;
+}
+
+.qi-lit .peer:nth-child(12n + 7) .peer-name {
+    background: red;
+}
+
+
+/* COLOR CODE FR */
+.qi-friends .peer:nth-child(12n + 1) .peer-name {
+    background: yellowgreen;
+}
+
+.qi-friends .peer:nth-child(12n + 2) .peer-name,
+.qi-friends .peer:nth-child(12n + 12) .peer-name {
+    background: mediumseagreen;
+}
+
+.qi-friends .peer:nth-child(12n + 3) .peer-name,
+.qi-friends .peer:nth-child(12n + 11) .peer-name {
+    background: lightseagreen;
+}
+
+.qi-friends .peer:nth-child(12n + 4) .peer-name,
+.qi-friends .peer:nth-child(12n + 10) .peer-name {
+    background: darkturquoise;
+}
+
+.qi-friends .peer:nth-child(12n + 5) .peer-name,
+.qi-friends .peer:nth-child(12n + 9) .peer-name {
+    background: deepskyblue;
+}
+
+.qi-friends .peer:nth-child(12n + 6) .peer-name,
+.qi-friends .peer:nth-child(12n + 8) .peer-name {
+    background: dodgerblue;
+}
+
+.qi-friends .peer:nth-child(12n + 7) .peer-name {
+    background: royalblue;
 }
 
 

@@ -51,15 +51,68 @@
                             </div>
                             <div class="peer-tab qi-lit active">
                                 <input class="peer-search" id="searchQiLit" type="text" placeholder="Search Qi Lit…">
-                                <table class="peer-table qi-lit-data"></table>
+                                <p class="text-center peer-btn-wrapper"> Sort by:
+                                    <a href="#" class="peer-btn sort sort-name">Name</a>
+                                    <a href="#" class="peer-btn sort sort-genre">Genre</a>
+                                    <a href="#" class="peer-btn sort sort-title">Title</a>
+                                    <span class="peer-btn-divider"></span>
+                                    <a href="#" class="peer-btn outline show filters-btn show-filters">Show Filters</a>
+                                    <a href="#" class="peer-btn outline filters-btn hide-filters">Hide Filters</a>
+                                    <a href="#" class="peer-btn outline all">Remove Filters</a>
+                                </p>
+                                <div class="filters">
+                                    <p class="text-center peer-btn-wrapper"><span class="hide-mobile">Filter by </span>age:
+                                        <a href="#" class="peer-btn outline age age-all">All</a>
+                                        <a href="#" class="peer-btn outline age age-kidlit">K<span class="hide-mobile">id</span>L<span class="hide-mobile">it</span></a>
+                                        <a href="#" class="peer-btn outline age age-mg">MG</a>
+                                        <a href="#" class="peer-btn outline age age-ya">YA</a>
+                                        <a href="#" class="peer-btn outline age age-na">NA</a>
+                                        <a href="#" class="peer-btn outline age age-adult">A<span class="hide-mobile">dult</span></a>
+                                    </p>
+                                    <p class="text-center peer-btn-wrapper"><span class="hide-mobile">Filter by </span>genre:
+                                        <a href="#" class="peer-btn outline genre genre-all">All</a>
+                                        <a href="#" class="peer-btn outline genre genre-speculative" data-tooltip="Sci-Fi/Fantasy/Horror">Speculative</a>
+                                        <a href="#" class="peer-btn outline genre genre-love" data-tooltip="Romance/Erotica">Love</a>
+                                        <a href="#" class="peer-btn outline genre genre-suspense" data-tooltip="Mystery/Thrillers/Crime genre-suspense">Suspense</a>
+                                        <a href="#" class="peer-btn outline genre genre-nonfiction" data-tooltip="Nonfiction/Memoirs">Nonfiction</a>
+                                    </p>
+                                </div>
+                                <table id="queer" class="peer-table qi-lit-data"></table>
                             </div>
 
                             <div class="peer-tab qi-friends">
                                 <input class="peer-search" id="searchFrLit" type="text" placeholder="Search Ally Lit…">
-                                <table class="peer-table qi-friends-data"></table>
+                                <p class="text-center peer-btn-wrapper"> Sort by:
+                                    <a href="#" class="peer-btn sort sort-name">Name</a>
+                                    <a href="#" class="peer-btn sort sort-genre">Genre</a>
+                                    <a href="#" class="peer-btn sort sort-title">Title</a>
+                                </p>
+                                <p class="text-center peer-btn-wrapper">
+                                    <a href="#" class="peer-btn outline show filters-btn show-filters">Show Filters</a>
+                                    <a href="#" class="peer-btn outline filters-btn hide-filters">Hide Filters</a>
+                                    <a href="#" class="peer-btn outline all">Remove Filters</a>
+                                </p>
+                                <div class="filters">
+                                    <p class="text-center peer-btn-wrapper"><span class="hide-mobile">Filter by </span>age:
+                                        <a href="#" class="peer-btn outline age age-all">All</a>
+                                        <a href="#" class="peer-btn outline age age-kidlit">KidLit</a>
+                                        <a href="#" class="peer-btn outline age age-mg">MG</a>
+                                        <a href="#" class="peer-btn outline age age-ya">YA</a>
+                                        <a href="#" class="peer-btn outline age age-na">NA</a>
+                                        <a href="#" class="peer-btn outline age age-adult">Adult</a>
+                                    </p>
+                                    <p class="text-center peer-btn-wrapper"><span class="hide-mobile">Filter by </span>genre:
+                                        <a href="#" class="peer-btn outline genre genre-all">All</a>
+                                        <a href="#" class="peer-btn outline genre genre-speculative" data-tooltip="Sci-Fi/Fantasy/Horror">Speculative</a>
+                                        <a href="#" class="peer-btn outline genre genre-love" data-tooltip="Romance/Erotica">Love</a>
+                                        <a href="#" class="peer-btn outline genre genre-suspense" data-tooltip="Mystery/Thrillers/Crime genre-suspense">Suspense</a>
+                                        <a href="#" class="peer-btn outline genre genre-nonfiction" data-tooltip="Nonfiction/Memoirs">Nonfiction</a>
+                                    </p>
+                                </div>
+                                <table id="ally" class="peer-table qi-friends-data"></table>
                             </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>

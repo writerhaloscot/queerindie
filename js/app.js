@@ -72,15 +72,20 @@ $(function () {
         e.preventDefault();
         if ($(this).hasClass('open')) {
             $(this).removeClass('open');
-            $(this).next('.peer-pitch').slideUp();
+            $('.peer-pitch').slideUp();
+            $('.peer-title').removeClass('open');
         } else {
             $(this).addClass('open');
             $(this).next('.peer-pitch').slideDown();
+            $(this).parents('.peer').siblings().find('.peer-pitch').slideUp();
+            $(this).parents('.peer').siblings().find('.peer-title').removeClass('open');
         }
     });
 
     // https://www.w3schools.com/jquery/jquery_filters.asp
     $('#searchQiLit').on('keyup', function () {
+        $('.peer-btn').removeClass('active');
+        $('tr.peer').removeClass('hide-genre').removeClass('hide-age');
         var value = $(this).val().toLowerCase();
         $(".qi-lit-data tr").filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
@@ -88,6 +93,8 @@ $(function () {
     });
     
     $('#searchFrLit').on('keyup', function () {
+        $('.peer-btn').removeClass('active');
+        $('tr.peer').removeClass('hide-genre').removeClass('hide-age');
         var value = $(this).val().toLowerCase();
         $(".qi-friends-data tr").filter(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)

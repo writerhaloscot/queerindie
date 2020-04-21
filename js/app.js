@@ -61,36 +61,37 @@ $(function () {
 
 
     // DIRECTORY
-
-    $('.peer-name').on('click', function (e) {
+    $('.peer-nav a').on('click', function (e) {
         e.preventDefault();
-        $(this).parents('.peer').find('.peer-panel').slideToggle(250);
-        $(this).toggleClass('open');
+        $(this).addClass('active').siblings().removeClass('active');
+        var h = $(this).attr('href').replace('#', '');
+        $('.' + h).addClass('active').siblings().removeClass('active');
     });
 
-    $('.qi-lit-expand').on('click', function (e) {
+    $('body').on('click', '.peer-title', function (e) {
         e.preventDefault();
-        $('.qi-lit .peer-panel').slideDown(250);
-        $('.qi-lit .peer-name').addClass('open');
+        if ($(this).hasClass('open')) {
+            $(this).removeClass('open');
+            $(this).next('.peer-pitch').slideUp();
+        } else {
+            $(this).addClass('open');
+            $(this).next('.peer-pitch').slideDown();
+        }
     });
 
-    $('.qi-lit-collapse').on('click', function (e) {
-        e.preventDefault();
-        $('.qi-lit .peer-panel').slideUp(250);
-        $('.qi-lit .peer-name').removeClass('open');
+    // https://www.w3schools.com/jquery/jquery_filters.asp
+    $('#searchQiLit').on('keyup', function () {
+        var value = $(this).val().toLowerCase();
+        $(".qi-lit-data tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
     });
-
-    $('.qi-friends-expand').on('click', function (e) {
-        e.preventDefault();
-        $('.qi-friends .peer-panel').slideDown(250);
-        $('.qi-friends .peer-name').addClass('open');
+    
+    $('#searchFrLit').on('keyup', function () {
+        var value = $(this).val().toLowerCase();
+        $(".qi-friends-data tr").filter(function () {
+            $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
     });
-
-    $('.qi-friends-collapse').on('click', function (e) {
-        e.preventDefault();
-        $('.qi-friends .peer-panel').slideUp(250);
-        $('.qi-friends .peer-name').removeClass('open');
-    });
-
 
 });

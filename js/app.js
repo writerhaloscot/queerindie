@@ -100,5 +100,37 @@ $(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
+    
+    $('#searchQiLit').on('keyup focus', function () {
+        if ($(this).val()) {
+            $('.peer-btn-wrapper').slideUp();
+            clearFilters();
+        }
+        else {
+            $('.peer-btn-wrapper').slideDown();
+        }
+    });
+    
+    $('#searchFrLit').on('keyup focus', function () {
+        if ($(this).val()) {
+            $('.peer-btn-wrapper').slideUp();
+            clearFilters();
+        }
+        else {
+            $('.peer-btn-wrapper').slideDown();
+        }
+    });
+    
+    $('#searchQiLit, #searchFrLit').on('blur', function () {
+        $('.peer-btn-wrapper').slideDown();
+        $('.peer-btn').removeClass('active');
+        $('tr.peer').removeClass('hide-genre').removeClass('hide-age');
+    });
+    
+    function clearFilters() {
+        $('.show-filters').addClass('show');
+        $('.hide-filters').removeClass('show');
+        $('.filters').slideUp();
+    }
 
 });

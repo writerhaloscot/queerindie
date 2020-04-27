@@ -824,6 +824,10 @@ video {
     content: '\f02e';
 }
 
+.genre-fiction:after {
+    content: '\f56b';
+}
+
 .genre-suspense.genre-love:after {
     content: '\f002\00a0\f004';
 }

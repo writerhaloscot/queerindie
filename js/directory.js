@@ -51,7 +51,12 @@ $(function () {
 ['Belinda Harrison','https://amzn.to/2SIGhgr','Thermopylae Bound Series','Epic Fantasy/Romance','@BeHarrison78','A nomadic warrior woman falls in love with a princess and sets in motion events with far-reaching consequences.','genre-speculative genre-love','age-adult'],
 ['Jax Meyer','http://author.to/JaxMeyer','A Marine&rsquo;s Heart series, Rising from Ash (Forged by Fire book 1)','Lesbian/WLW Romance','@butchjax','After loss of her soulmate, autistic former Marine finds love again through music.','genre-love','age-adult'],
 ['C.J. Edmunds','http://www.cjedmunds.com','Take Me Now: Tales from the Dark District and Sojourn','Urban Fantasy','@CJEdmunds1','Imagine a place where you are free to be who you want to be or hide from the world that wronged and shunned you. A place where there is no judgement. To enter is free. To stay is a choice. Welcome to the Dark District.','genre-speculative','age-adult'],
-['H.A. Blackwood','https://www.amazon.com/Tell-Tale-Hearts-H-Blackwood-ebook/dp/B081Z7HYTL','Tell-Tale Hearts','Erotica','@hablackwood7','Darcy Ford wants a clean start - but do so she&rsquo;s going to have to talk dirty.','genre-love','age-adult']
+['H.A. Blackwood','https://www.amazon.com/Tell-Tale-Hearts-H-Blackwood-ebook/dp/B081Z7HYTL','Tell-Tale Hearts','Erotica','@hablackwood7','Darcy Ford wants a clean start - but do so she&rsquo;s going to have to talk dirty.','genre-love','age-adult'],
+        ['Anny Borg','https://theannyblog.com/books/beyond-the-horizon/','Beyond the Horizon','Coming-of-Age, Young Adult','@annyinacastle','A Coming-of-Age story about growing up, being true to oneself and overcoming the adversaries of both the past and present.','genre-fiction','age-ya'],
+['Donovan Edwards ','https://slade2372.wixsite.com/website','Denver Demon series ','Horror/supernatural ','@DonovanEdwards ','In search for answers  David finds himself caught up in a world of sex, lies, and the supernatural. ','genre-speculative','age-adult'],
+['Chase Taylor Hackett','https://www.amazon.com/gp/product/B071VHV289?notRedirectToSDP=1&ref_=dbs_mng_calw_1&storeType=ebooks','And the Next Thing You Know...','Romantic comedy','@cthackkett','Rising-star attorney Jeffrey is suddenly wondering if the last guy he’d ever fall for—might be exactly that.','genre-love','age-adult'],
+['Sandy Gilchrist','https://www.sandygilchristauthor.com/','Finding Me','Lesbian Romance','@SandyGilchrist_','A distraction is what Ava wanted. Is sexy cafe owner, Isabel just that? Join Ava on her journey of self-discovery filled with love, tears & laughter.','genre-love','age-adult'],
+['I.M. Redwright','https://wottaread.com','The Sapphire Eruption/The Sword&rsquo;s Choice','YA Fantasy','@wottaread','Once a year, the skies burn red. Upon this day, the Fire Kingdom’s priests perform their ritual: each newborn’s palm is lacerated, opened with a sacred sword, for Firia’s next ruler will be seen to shed no blood. ','genre-speculative','age-ya']
     ];
 
 
@@ -97,7 +102,11 @@ $(function () {
 ['Zoe Allison','https://www.amazon.co.uk/-/e/B085LPBH4W?ref_=pe_1805931_64024261','Impervious','Romance','@zoeallisonauth1','She excels as an assassin. Will she fail at love?','genre-love','age-adult'],
 ['Anna Mocikat','https://www.amazon.com/Anna-Mocikat/e/B00IW3OO9A?ref=sr_ntt_srch_lnk_1&qid=1587747466&sr=1-1 ','Shadow City, Behind Blue Eyes','Sci-Fi','@anna_mocikat','After a horrific catastrophe, the survivers in post-apocalyptic LA face a threat from another dimension which threatens to exterminate what is left of humanity.','genre-speculative','age-adult'],
         ['The Organic Poet','https://www.theorganicpoet.com/','Theorganicpoet.com','We have M/F within our group','@poetorganic','The Organic Poet is a movement. A safe and empathetic space. Together we have only one goal in mind……to make the world a better place - for all!','genre-speculative','age-adult'],
-['Johnny Carlson / Jannie Coats','https://www.amazon.com/BUT-CAN-DREAM-Jannie-Coats-ebook/dp/B0076CNLBK/ref=sr_1_2?dchild=1&keywords=Jannie+Coats&qid=1587849057&sr=8-2','But I Can Dream Can&rsquo;t I','Love and disdain and historical fantasy','@johnny45842969','A mix of strange tales - an unusual read','genre-speculative genre-love','age-adult']
+['Johnny Carlson / Jannie Coats','https://www.amazon.com/BUT-CAN-DREAM-Jannie-Coats-ebook/dp/B0076CNLBK/ref=sr_1_2?dchild=1&keywords=Jannie+Coats&qid=1587849057&sr=8-2','But I Can Dream Can&rsquo;t I','Love and disdain and historical fantasy','@johnny45842969','A mix of strange tales - an unusual read','genre-speculative genre-love','age-adult'],
+        ['Solomon','https://www.amazon.com/dp/0578577828','Things Happen Don&rsquo;t Let It Get To You','Poetry','@solomon_poetry','Things Happen is an anthology of poetry that takes you into the mind of a person that is trying to find themselves and their purpose in life. ','genre-fiction','age-adult'],
+['Carrie Baker','https://www.amazon.com/Carrie-Baker/e/B081Y5NQ7W?ref=sr_ntt_srch_lnk_1&qid=1587914983&sr=8-1','Heron&rsquo;s Point Novella series','Young Adult','@CarrieBWriter','Visit the fictional beach town of Heron&rsquo;s Point and meet new and returning characters while they navigate life and all the lessons to be learned.','genre-fiction','age-ya'],
+['Jessaca Willis','https://books2read.com/u/4XXwKN','Blood Awakens','Supernatural Dystopian Post-Apocalyptic','@jessacawillis','Supernatural powers, devastated nations, and a whole lot of blood.','genre-speculative','age-adult'],
+['J.G. MacLeod','https://www.amazon.com/-/e/B07F25Z73T','The Future Bride, Abalone, The Adventures of Lady Ellen Montagu','Romcom, Litfic, Histfic','@jgmacleodauthor','Brigid MacDonald spends her days working in a coffee shop until she&rsquo;s transported to 15th-century Scotland where she&rsquo;s being dressed for a wedding she didn&rsquo;t consent to!','genre-love','age-adult']
     ];
 
 
@@ -218,7 +227,11 @@ $(function () {
         } else if ($(this).hasClass('genre-suspense')) {
             $('.peer-btn.genre-suspense').addClass('active');
             $('.peer-genre.genre-suspense').parent().removeClass('hide-genre');
-        } else if ($(this).hasClass('genre-nonfiction')) {
+        } else if ($(this).hasClass('genre-fiction')) {
+            $('.peer-btn.genre-fiction').addClass('active');
+            $('.peer-genre.genre-fiction').parent().removeClass('hide-genre');
+        }
+         else if ($(this).hasClass('genre-nonfiction')) {
             $('.peer-btn.genre-nonfiction').addClass('active');
             $('.peer-genre.genre-nonfiction').parent().removeClass('hide-genre');
         }

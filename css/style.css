@@ -840,6 +840,10 @@ video {
     content: '\f002\00a0\f005';
 }
 
+.genre-fiction.genre-nonfiction:after {
+    content: '\f56b\00a0\f02e';
+}
+
 
 /* SORT */
 

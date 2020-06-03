@@ -349,6 +349,12 @@ video {
     font: inherit;
 }
 
+.hero a i {
+    vertical-align: middle;
+    margin-bottom: 2px;
+    margin-left: 3px;
+}
+
 .hero a span.hlt {
     color: greenyellow;
     font-weight: 700;
@@ -1177,6 +1183,110 @@ video {
 }
 
 
+/* LIGHTBOX */
+
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 99998;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.lightbox-content {
+    position: fixed;
+    z-index: 99999;
+    background: white;
+    margin: 0 auto;
+    left: 16px;
+    right: 16px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    max-width: 600px;
+    padding: 0 2rem;
+    max-height: 90%;
+    overflow-y: auto;
+}
+
+.lightbox-close {
+    font-size: 2em;
+    position: absolute;
+    top: 0.75rem;
+    right: 0.75rem;
+    line-height: 0;
+    color: white;
+}
+
+.lightbox-close i {
+    font-size: inherit;
+}
+
+.lightbox h2 {
+    margin: 0 -2rem 1rem;
+    background: black;
+    text-align: center;
+    border: 2px solid white;
+    padding: 16px 64px;
+}
+
+.lightbox h3 {
+    margin-bottom: 0;
+}
+
+.lightbox p {
+    margin-bottom: 0.5rem;
+}
+
+.lightbox p:first-of-type {
+    font-size: 1.05em;
+    margin-bottom: 1rem;
+}
+
+.lightbox p a {
+    background: black;
+    color: greenyellow;
+    padding: 4px 8px;
+    display: inline-block;
+    margin-bottom: 4px;
+    font-size: 0.75em;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    text-decoration: none;
+}
+
+.lightbox p a:hover {
+    background: blue;
+}
+
+.lightbox strong {
+    font-weight: 700;
+}
+
+.lightbox .button {
+    margin: 1rem -2rem 0;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    border: 2px solid white;
+}
+
+.lightbox img {
+    display: block;
+    max-width: 250px !important;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.lightbox span {
+    font-size: inherit;
+}
+
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1024px) {
@@ -1315,6 +1425,23 @@ video {
     .hero-covers {
         max-width: 600px !important;
         margin: -20px auto -60px;
+    }
+    .lightbox-content {
+        padding: 0 1rem;
+    }
+    .lightbox h2,
+    .lightbox .button {
+        margin-left: -1rem;
+        margin-right: -1rem;
+    }
+    .lightbox h3 {
+        display: none;
+    }
+    .lightbox p {
+        font-size: 16px;
+    }
+    .lightbox p:first-of-type {
+        font-size: 18px;
     }
 }
 

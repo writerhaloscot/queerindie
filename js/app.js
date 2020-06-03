@@ -8,6 +8,7 @@ $(function () {
     var c = 'css/style.css?v=1.1.1';
     var h = 'includes/header.html';
     var f = 'includes/footer.html';
+    var l = 'includes/lightbox.html';
     var g = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160020484-1"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-160020484-1");</script>';
 
     if (window.location.pathname != '/') {
@@ -15,12 +16,14 @@ $(function () {
         c = '../' + c;
         h = '../' + h;
         f = '../' + f;
+        l = '../' + l;
     }
 
     $('head').prepend(m + g + s);
     $('head').append('<link rel="shortcut icon" href="' + v + '" type="image/x-icon" /><link rel="stylesheet" href="' + c + '" />');
     $('#header').load(h);
     $('#footer').load(f);
+    $('#lightbox').load(l);
 
 
     // SCROLL TO TOP
@@ -91,7 +94,7 @@ $(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
-    
+
     $('#searchFrLit').on('keyup', function () {
         $('.peer-btn').removeClass('active');
         $('tr.peer').removeClass('hide-genre').removeClass('hide-age');
@@ -100,37 +103,57 @@ $(function () {
             $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
         });
     });
-    
+
     $('#searchQiLit').on('keyup focus', function () {
         if ($(this).val()) {
             $('.peer-btn-wrapper').slideUp();
             clearFilters();
-        }
-        else {
+        } else {
             $('.peer-btn-wrapper').slideDown();
         }
     });
-    
+
     $('#searchFrLit').on('keyup focus', function () {
         if ($(this).val()) {
             $('.peer-btn-wrapper').slideUp();
             clearFilters();
-        }
-        else {
+        } else {
             $('.peer-btn-wrapper').slideDown();
         }
     });
-    
+
     $('#searchQiLit, #searchFrLit').on('blur', function () {
         $('.peer-btn-wrapper').slideDown();
         $('.peer-btn').removeClass('active');
         $('tr.peer').removeClass('hide-genre').removeClass('hide-age');
     });
-    
+
     function clearFilters() {
         $('.show-filters').addClass('show');
         $('.hide-filters').removeClass('show');
         $('.filters').slideUp();
+    }
+
+    // LIGHTBOX
+
+    $('body').on('click', '.lightbox-content', function (e) {
+        e.stopPropagation();
+    });
+    $('body').on('click', '.lightbox-close, .lightbox', function (e) {
+        e.preventDefault();
+        sessionStorage.setItem('firstVisit', true);
+    });
+    $('body').on('click', '.lightbox-close', function (e) {
+        $(this).parents('.lightbox').fadeOut();
+    });
+    $('body').on('click', '.lightbox', function (e) {
+        $(this).fadeOut();
+    });
+
+    if (!sessionStorage.getItem('firstVisit')) {
+        setTimeout(function () {
+            $('.lightbox').fadeIn();
+        }, 500);
     }
 
 });

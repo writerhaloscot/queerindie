@@ -121,7 +121,8 @@ $(function () {
 ['Jessaca Willis','https://books2read.com/u/4XXwKN','Blood Awakens','Supernatural Dystopian Post-Apocalyptic','@jessacawillis','Supernatural powers, devastated nations, and a whole lot of blood.','genre-speculative','age-adult'],
 ['J.G. MacLeod','https://www.amazon.com/-/e/B07F25Z73T','The Future Bride, Abalone, The Adventures of Lady Ellen Montagu','Romcom, Litfic, Histfic','@jgmacleodauthor','Brigid MacDonald spends her days working in a coffee shop until she&rsquo;s transported to 15th-century Scotland where she&rsquo;s being dressed for a wedding she didn&rsquo;t consent to!','genre-love','age-adult'],
         ['Derek R King','https://www.amazon.com/Derek-R.-King/e/B07MPBQNCH%3Fref=dbs_a_mng_rwt_scns_share','The Life and Times Of Clyde Kennard / Winter Chills','Fiction / Non fiction / Poetry','@DerekRKing2','True Story: &ldquo;Clyde Kennard attempts college enroll, but gets sentenced to 7 years hard labour at State Penitentiary instead.&rdquo; Why? And what happens to him.','genre-fiction genre-nonfiction','age-adult'],
-        ['David Middleham','https://amazon.com/author/davidmiddleham','Strange Colours','Poetry/Misc.','@DavidMiddleham','A collection of poems about love and its many colours.','genre-fiction','age-adult']
+        ['David Middleham','https://amazon.com/author/davidmiddleham','Strange Colours','Poetry/Misc.','@DavidMiddleham','A collection of poems about love and its many colours.','genre-fiction','age-adult'],
+        ['Tyler Hayes','https://tyler-hayes.com','The Imaginary Corpse','Fantasy','@the_real_tyler','A dinosaur detective in the land of unwanted ideas battled trauma, anxiety, and the first serial killer of imaginary friends.','genre-speculative','age-adult']
     ];
 
 

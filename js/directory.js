@@ -126,7 +126,7 @@ $(function () {
     ];
 
 
-    // DIRECTORY FUNCTIONS
+    // DIRECTORY FUNCTIONS 
 
     var dirQLHTML = '';
     var dirFrHTML = '';

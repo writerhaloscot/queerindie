@@ -69,7 +69,10 @@ $(function () {
 ['Ade G. Demon','https://www.findingserendiipitii.com/','(WIP) The Witch&rsquo;s Gunslinger','Fantasy / Romance / Occult','@thedemonauthor','An ex-gang leader and a coven witch wrestle with the Wild West and its demons to free the witch&rsquo;s coven sisters and keep their marriage steady.','genre-speculative genre-love','age-adult'],
 ['San G. Crowe','https://sangcrowe.com','The Craving, and short stories','Sci-fi, fantasy, paranormal, horror, etc','@TheNamelessCrow','The voices in his head want nothing but bloodshed, and to prevent more people from dying, he may have to go back to the scientists that turned him into a bloodthirsty monster.','genre-speculative','age-adult'],
 ['Lali A. Love','http://authorlalialove.com/','The De-Coding of Jo: Hall of Ignorance','Fantasy','@laliaristo','16-year-old Jo struggles with her celestial identity, betrayal and devastating heartbreak as demonic parasites turn her classmates into an army of violent sleepwalkers.','genre-speculative','age-ya'],
-['D M Grant','https://www.amazon.com/D-M-Grant/e/B0846BYKKK','The Exile','Coming of Age','@aussielol','THE EXILE dissects the tumultuous growing experiences that can both shape a character and tear it apart. The book is a coming of age story set against the harshness of unemployment, recession and a hot blistering sun.','genre-fiction','age-adult']
+['D M Grant','https://www.amazon.com/D-M-Grant/e/B0846BYKKK','The Exile','Coming of Age','@aussielol','THE EXILE dissects the tumultuous growing experiences that can both shape a character and tear it apart. The book is a coming of age story set against the harshness of unemployment, recession and a hot blistering sun.','genre-fiction','age-adult'],
+        ['Vaz Anzai','https://vazanzai.com/','Strange Tales From The City of Dust','Cyberpunk','@vazanzai','In the dark future-tech city of Dust, Dia the prostitute will learn she is much more than just machine meant for men&rsquo;s abuse. ','genre-speculative','age-adult'],
+['John','http://johnny-edward2011.blogspot.com/2020/06/fatal.html','short stories','mixed','@Johnny45842969','flawed families','genre-fiction','age-adult'],
+['Johnny/Jannie','https://www.amazon.com/SWITCH-jannie-Coats-ebook/dp/B007TAQVT8/ref=sr_1_1?dchild=1&keywords=Jannie+Coats&qid=1591740369&sr=8-1','The Switch','gay and lesbian short stories','@Johnny45842969','It&rsquo;s all about lgbtq love','genre-love','age-adult']
     ];
 
 
@@ -122,7 +125,8 @@ $(function () {
 ['J.G. MacLeod','https://www.amazon.com/-/e/B07F25Z73T','The Future Bride, Abalone, The Adventures of Lady Ellen Montagu','Romcom, Litfic, Histfic','@jgmacleodauthor','Brigid MacDonald spends her days working in a coffee shop until she&rsquo;s transported to 15th-century Scotland where she&rsquo;s being dressed for a wedding she didn&rsquo;t consent to!','genre-love','age-adult'],
         ['Derek R King','https://www.amazon.com/Derek-R.-King/e/B07MPBQNCH%3Fref=dbs_a_mng_rwt_scns_share','The Life and Times Of Clyde Kennard / Winter Chills','Fiction / Non fiction / Poetry','@DerekRKing2','True Story: &ldquo;Clyde Kennard attempts college enroll, but gets sentenced to 7 years hard labour at State Penitentiary instead.&rdquo; Why? And what happens to him.','genre-fiction genre-nonfiction','age-adult'],
         ['David Middleham','https://amazon.com/author/davidmiddleham','Strange Colours','Poetry/Misc.','@DavidMiddleham','A collection of poems about love and its many colours.','genre-fiction','age-adult'],
-        ['Tyler Hayes','https://tyler-hayes.com','The Imaginary Corpse','Fantasy','@the_real_tyler','A dinosaur detective in the land of unwanted ideas battled trauma, anxiety, and the first serial killer of imaginary friends.','genre-speculative','age-adult']
+        ['Tyler Hayes','https://tyler-hayes.com','The Imaginary Corpse','Fantasy','@the_real_tyler','A dinosaur detective in the land of unwanted ideas battled trauma, anxiety, and the first serial killer of imaginary friends.','genre-speculative','age-adult'],
+        ['Nathan Rivers','https://www.amazon.co.uk/dp/B089B58VN2','&ldquo;Divided Loyalties&rdquo; London Ganglands book two','Crime fiction','@crimerivers','A tough uncompromising novel of a brutal world where respect and loyalty from those around you are often the only things which will keep you alive.','genre-suspense','age-adult']
     ];
 
 

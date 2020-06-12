@@ -72,7 +72,8 @@ $(function () {
 ['D M Grant','https://www.amazon.com/D-M-Grant/e/B0846BYKKK','The Exile','Coming of Age','@aussielol','THE EXILE dissects the tumultuous growing experiences that can both shape a character and tear it apart. The book is a coming of age story set against the harshness of unemployment, recession and a hot blistering sun.','genre-fiction','age-adult'],
         ['Vaz Anzai','https://vazanzai.com/','Strange Tales From The City of Dust','Cyberpunk','@vazanzai','In the dark future-tech city of Dust, Dia the prostitute will learn she is much more than just machine meant for men&rsquo;s abuse. ','genre-speculative','age-adult'],
 ['John','http://johnny-edward2011.blogspot.com/2020/06/fatal.html','short stories','Mixed','@Johnny45842969','flawed families','genre-fiction','age-adult'],
-['Johnny/Jannie','https://www.amazon.com/SWITCH-jannie-Coats-ebook/dp/B007TAQVT8/ref=sr_1_1?dchild=1&keywords=Jannie+Coats&qid=1591740369&sr=8-1','The Switch','gay and lesbian short stories','@Johnny45842969','It&rsquo;s all about lgbtq love','genre-love','age-adult']
+['Johnny/Jannie','https://www.amazon.com/SWITCH-jannie-Coats-ebook/dp/B007TAQVT8/ref=sr_1_1?dchild=1&keywords=Jannie+Coats&qid=1591740369&sr=8-1','The Switch','gay and lesbian short stories','@Johnny45842969','It&rsquo;s all about lgbtq love','genre-love','age-adult'],
+        ['Josh Stoddard','https://www.amazon.co.uk/Josh-Stoddard/e/B0876GWVJ6/ref=dp_byline_cont_ebooks_1','Smalltown Boy','Romance','@jstodtv','In 1980s Manchester, a bisexual baker risks being outed when he falls in love.','genre-love','age-adult']
     ];
 
 

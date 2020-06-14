@@ -1320,6 +1320,11 @@ video {
     .peer-buy {
         font-size: 13px;
     }
+    .peer-name {
+        max-width: 200px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
     .peer-genre {
         max-width: 220px;
     }

@@ -195,6 +195,10 @@ video {
     width: 51px;
 }
 
+#header nav {
+    position: relative;
+}
+
 #header .inner {
     color: white;
     width: 140px;
@@ -209,6 +213,24 @@ video {
 
 #header .inner:last-of-type {
     text-align: left;
+}
+
+#header .nav-social {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#header .social {
+    color: white;
+    padding-right: 0;
+}
+
+#header .social i {
+    font-size: 16px;
 }
 
 
@@ -528,6 +550,14 @@ video {
     display: block;
     font-size: 1.25em;
     text-transform: uppercase;
+}
+
+.press-title a {
+    color: black;
+}
+
+.press-title a:hover {
+    color: blue;
 }
 
 .press .button {
@@ -1510,5 +1540,20 @@ video {
     }
     .container.directory {
         padding: 16px !important;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #header {
+        overflow: visible;
+    }
+    #header .nav-social {
+        left: -16px;
+        right: -16px;
+        top: 76px;
+        background: rgba(0, 0, 0, 0.45);
+    }
+    #header .social {
+        padding: 0 10px 4px;
     }
 }

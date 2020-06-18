@@ -73,7 +73,8 @@ $(function () {
         ['Vaz Anzai','https://vazanzai.com/','Strange Tales From The City of Dust','Cyberpunk','@vazanzai','In the dark future-tech city of Dust, Dia the prostitute will learn she is much more than just machine meant for men&rsquo;s abuse. ','genre-speculative','age-adult'],
 ['John','http://johnny-edward2011.blogspot.com/2020/06/fatal.html','short stories','Mixed','@Johnny45842969','flawed families','genre-fiction','age-adult'],
 ['Johnny/Jannie','https://www.amazon.com/SWITCH-jannie-Coats-ebook/dp/B007TAQVT8/ref=sr_1_1?dchild=1&keywords=Jannie+Coats&qid=1591740369&sr=8-1','The Switch','gay and lesbian short stories','@Johnny45842969','It&rsquo;s all about lgbtq love','genre-love','age-adult'],
-        ['Josh Stoddard','https://www.amazon.co.uk/Josh-Stoddard/e/B0876GWVJ6/ref=dp_byline_cont_ebooks_1','Smalltown Boy','Romance','@jstodtv','In 1980s Manchester, a bisexual baker risks being outed when he falls in love.','genre-love','age-adult']
+        ['Josh Stoddard','https://www.amazon.co.uk/Josh-Stoddard/e/B0876GWVJ6/ref=dp_byline_cont_ebooks_1','Smalltown Boy','Romance','@jstodtv','In 1980s Manchester, a bisexual baker risks being outed when he falls in love.','genre-love','age-adult'],
+        ['Cody Pelletier','https://www.instagram.com/publishquest','Walter and the Secret Keeper','Young Adult','@Publishquest ','Everything you’ve been told is true, but that is only part of the story.','genre-fiction','age-ya']
     ];
 
 
@@ -127,7 +128,10 @@ $(function () {
         ['Derek R King','https://www.amazon.com/Derek-R.-King/e/B07MPBQNCH%3Fref=dbs_a_mng_rwt_scns_share','The Life and Times Of Clyde Kennard / Winter Chills','Fiction / Non fiction / Poetry','@DerekRKing2','True Story: &ldquo;Clyde Kennard attempts college enroll, but gets sentenced to 7 years hard labour at State Penitentiary instead.&rdquo; Why? And what happens to him.','genre-fiction genre-nonfiction','age-adult'],
         ['David Middleham','https://amazon.com/author/davidmiddleham','Strange Colours','Poetry/Misc.','@DavidMiddleham','A collection of poems about love and its many colours.','genre-fiction','age-adult'],
         ['Tyler Hayes','https://tyler-hayes.com','The Imaginary Corpse','Fantasy','@the_real_tyler','A dinosaur detective in the land of unwanted ideas battled trauma, anxiety, and the first serial killer of imaginary friends.','genre-speculative','age-adult'],
-        ['Nathan Rivers','https://www.amazon.co.uk/dp/B089B58VN2','&ldquo;Divided Loyalties&rdquo; London Ganglands book two','Crime fiction','@crimerivers','A tough uncompromising novel of a brutal world where respect and loyalty from those around you are often the only things which will keep you alive.','genre-suspense','age-adult']
+        ['Nathan Rivers','https://www.amazon.co.uk/dp/B089B58VN2','&ldquo;Divided Loyalties&rdquo; London Ganglands book two','Crime fiction','@crimerivers','A tough uncompromising novel of a brutal world where respect and loyalty from those around you are often the only things which will keep you alive.','genre-suspense','age-adult'],
+        ['Deirdre Allen Timmons','http://www.deirdretimmons.com','Brain Candy','Memoir ','@timmonsdeirdre','A bold, hilarious. warts-and-all memoir about one woman’s battle  with an inoperable, malignant, and unwelcome brain tumor. ','genre-nonfiction','age-adult'],
+['Titan Frey ','https://authortitanfrey26.wixsite.com/titanfrey','Reflection: The Paul Mann Story, A Player&rsquo;s Path: A Story About Life and Football','YA, Historical Fiction, Coming of Age','@Authortitanfrey','In a world where days are tough, and the rain pours, remember the sun will shine again. ','genre-fiction','age-ya'],
+['Philip Woodrow Lewis','https://www.amazon.co.uk/-/e/B08BCNG2GH','Kung Fu Fighting Vampire Mermaids-Globe Zero','Urban Fantasy','@writerwoodrow','Just when you think you&rsquo;ve seen it all. Journey into a fantastical future with Kung Fu Fighting Vampire Mermaids - Globe Zero','genre-speculative','age-adult']
     ];
 
 

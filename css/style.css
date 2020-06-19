@@ -1142,21 +1142,118 @@ video {
 }
 
 
+/* WHO WE ARE */
+
+.who-we-are * {
+    color: white;
+    text-align: center;
+}
+
+.who-we-are p:first-of-type {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.who-we-are {
+    padding: 40px 0 100px;
+}
+
+.who-we-are .container {
+    max-width: 800px;
+}
+
+.who-we-are .button {
+    background: white;
+    color: black;
+    vertical-align: middle;
+}
+
+.who-we-are .button:hover {
+    background: blue;
+    color: white;
+}
+
+
+/* PROMO */
+
+.promo {
+    margin-top: 30px;
+    margin-bottom: 50px;
+    background: blue;
+}
+
+.promo .container {
+    background: black;
+}
+
+.flex-row > div {
+    background: white;
+}
+
+.promo ul {
+    padding-left: 1rem;
+}
+
+.promo h2 {
+    margin-bottom: 0;
+    text-transform: uppercase;
+}
+
+.promo h3 {
+    margin-top: 0;
+    font-style: italic;
+    font-size: 1.35rem;
+}
+
+.promo .right {
+    border-color: black;
+    padding: 15px;
+    border-bottom-width: 60px;
+}
+
+.promo .flex-row .right p {
+    max-width: none;
+}
+
+.promo .left p {
+    margin-bottom: 0.5rem;
+}
+
+.promo .left p:last-of-type {
+    margin-bottom: 0;
+}
+
+.promo-img {
+    display: block;
+    padding-top: 33%;
+    margin-bottom: 1rem;
+    background-image: url('../img/promo-sulk-min.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.promo iframe {
+    display: block;
+    width: 100% !important;
+}
+
+
 /* FOOTER */
 
 #footer {
     padding-top: 16px;
     padding-bottom: 16px;
-    text-align: center;
     background: black;
 }
 
-#footer .container {
+#footer .footer-titles-bg.container {
     max-width: 900px;
+    text-align: center;
 }
 
-#footer a,
-#footer span {
+#footer .footer-titles-bg a,
+#footer .footer-titles-bg span {
     display: inline-block;
     color: white;
     text-decoration: none;
@@ -1166,7 +1263,7 @@ video {
     font-weight: 400 !important;
 }
 
-#footer a:hover {
+#footer .footer-titles-bg a:hover {
     color: greenyellow;
 }
 
@@ -1478,9 +1575,6 @@ video {
     .lightbox p:first-of-type {
         font-size: 18px;
     }
-}
-
-@media only screen and (max-width: 600px) {
     #header .inner {
         width: 90px;
     }
@@ -1540,6 +1634,10 @@ video {
     }
     .container.directory {
         padding: 16px !important;
+    }
+    .promo .right {
+        border: 0;
+        border-top: 15px solid black;
     }
 }
 

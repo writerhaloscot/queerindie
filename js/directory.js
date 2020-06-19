@@ -131,7 +131,8 @@ $(function () {
         ['Nathan Rivers','https://www.amazon.co.uk/dp/B089B58VN2','&ldquo;Divided Loyalties&rdquo; London Ganglands book two','Crime fiction','@crimerivers','A tough uncompromising novel of a brutal world where respect and loyalty from those around you are often the only things which will keep you alive.','genre-suspense','age-adult'],
         ['Deirdre Allen Timmons','http://www.deirdretimmons.com','Brain Candy','Memoir ','@timmonsdeirdre','A bold, hilarious. warts-and-all memoir about one woman’s battle  with an inoperable, malignant, and unwelcome brain tumor. ','genre-nonfiction','age-adult'],
 ['Titan Frey ','https://authortitanfrey26.wixsite.com/titanfrey','Reflection: The Paul Mann Story, A Player&rsquo;s Path: A Story About Life and Football','YA, Historical Fiction, Coming of Age','@Authortitanfrey','In a world where days are tough, and the rain pours, remember the sun will shine again. ','genre-fiction','age-ya'],
-['Philip Woodrow Lewis','https://www.amazon.co.uk/-/e/B08BCNG2GH','Kung Fu Fighting Vampire Mermaids-Globe Zero','Urban Fantasy','@writerwoodrow','Just when you think you&rsquo;ve seen it all. Journey into a fantastical future with Kung Fu Fighting Vampire Mermaids - Globe Zero','genre-speculative','age-adult']
+['Philip Woodrow Lewis','https://www.amazon.co.uk/-/e/B08BCNG2GH','Kung Fu Fighting Vampire Mermaids-Globe Zero','Urban Fantasy','@writerwoodrow','Just when you think you&rsquo;ve seen it all. Journey into a fantastical future with Kung Fu Fighting Vampire Mermaids - Globe Zero','genre-speculative','age-adult'],
+        ['Lori Yerxa','https://www.amazon.com/dp/1692325019  ','Pushing Through','Biography','@loriyerxa11','The Transformation of a Shattered Soul ','genre-nonfiction','age-adult']
     ];
 
 

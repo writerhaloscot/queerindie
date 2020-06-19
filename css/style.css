@@ -1198,14 +1198,29 @@ video {
 }
 
 .promo h2 {
+    font-size: 25px;
     margin-bottom: 0;
     text-transform: uppercase;
 }
 
 .promo h3 {
+    font-size: 22px !important;
     margin-top: 0;
+    margin-bottom: 8px;
     font-style: italic;
     font-size: 1.35rem;
+}
+
+.promo p {
+    font-size: 15px;
+}
+
+.promo em {
+    font-size: inherit;
+}
+
+.promo p .link {
+    font-size: 13px;
 }
 
 .promo .right {
@@ -1228,12 +1243,20 @@ video {
 
 .promo-img {
     display: block;
-    padding-top: 33%;
+    padding-top: 30%;
     margin-bottom: 1rem;
     background-image: url('../img/promo-sulk-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
+}
+
+.promo-img.tellworthy {
+    background-image: url('../img/promo-tellworthy-min.jpg');
+}
+
+.promo-img.fugitivepoems {
+    background-image: url('../img/promo-fugitive-min.jpg');
 }
 
 .promo iframe {
@@ -1249,6 +1272,10 @@ video {
     border: 0;
     padding: 15px;
     border-bottom: 15px solid black;
+}
+
+.promo .link {
+    white-space: nowrap;
 }
 
 

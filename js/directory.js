@@ -74,7 +74,8 @@ $(function () {
 ['John','http://johnny-edward2011.blogspot.com/2020/06/fatal.html','short stories','Mixed','@Johnny45842969','flawed families','genre-fiction','age-adult'],
 ['Johnny/Jannie','https://www.amazon.com/SWITCH-jannie-Coats-ebook/dp/B007TAQVT8/ref=sr_1_1?dchild=1&keywords=Jannie+Coats&qid=1591740369&sr=8-1','The Switch','gay and lesbian short stories','@Johnny45842969','It&rsquo;s all about lgbtq love','genre-love','age-adult'],
         ['Josh Stoddard','https://www.amazon.co.uk/Josh-Stoddard/e/B0876GWVJ6/ref=dp_byline_cont_ebooks_1','Smalltown Boy','Romance','@jstodtv','In 1980s Manchester, a bisexual baker risks being outed when he falls in love.','genre-love','age-adult'],
-        ['Cody Pelletier','https://www.instagram.com/publishquest','Walter and the Secret Keeper','Young Adult','@Publishquest ','Everything you’ve been told is true, but that is only part of the story.','genre-fiction','age-ya']
+        ['Cody Pelletier','https://www.instagram.com/publishquest','Walter and the Secret Keeper','Young Adult','@Publishquest ','Everything you’ve been told is true, but that is only part of the story.','genre-fiction','age-ya'],
+        ['Brian Schutter','http://amzn.com/B086WRSQJR/','Titanborn','Science Fiction','@BrianSchutter','Born far from Earth, the telepathic colonist Meera must overcome the trauma of loss and journey across Titan&rsquo;s dunes to find her missing friend.','genre-speculative','age-adult']
     ];
 
 

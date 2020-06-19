@@ -1180,6 +1180,9 @@ video {
     margin-top: 30px;
     margin-bottom: 50px;
     background: blue;
+    background-image: url(../img/rainbow-261419-min.jpg);
+    background-size: cover;
+    background-position: center center;
 }
 
 .promo .container {
@@ -1236,6 +1239,16 @@ video {
 .promo iframe {
     display: block;
     width: 100% !important;
+}
+
+.promo .flex-row.top .right {
+    padding-bottom: 35px;
+}
+
+.promo .flex-row.top .left {
+    border: 0;
+    padding: 15px;
+    border-bottom: 15px solid black;
 }
 
 
@@ -1638,6 +1651,18 @@ video {
     .promo .right {
         border: 0;
         border-top: 15px solid black;
+    }
+    .promo .flex-row {
+        border-top: 15px solid black;
+    }
+    .promo .flex-row.top .left {
+        border-bottom: 0;
+    }
+    .promo .flex-row.top .right {
+        padding-bottom: 15px;
+    }
+    .promo .flex-row.top .right .promo-img {
+        margin-bottom: 0;
     }
 }
 

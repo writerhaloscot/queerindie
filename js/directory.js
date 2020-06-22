@@ -75,7 +75,8 @@ $(function () {
 ['Johnny/Jannie','https://www.amazon.com/SWITCH-jannie-Coats-ebook/dp/B007TAQVT8/ref=sr_1_1?dchild=1&keywords=Jannie+Coats&qid=1591740369&sr=8-1','The Switch','gay and lesbian short stories','@Johnny45842969','It&rsquo;s all about lgbtq love','genre-love','age-adult'],
         ['Josh Stoddard','https://www.amazon.co.uk/Josh-Stoddard/e/B0876GWVJ6/ref=dp_byline_cont_ebooks_1','Smalltown Boy','Romance','@jstodtv','In 1980s Manchester, a bisexual baker risks being outed when he falls in love.','genre-love','age-adult'],
         ['Cody Pelletier','https://www.instagram.com/publishquest','Walter and the Secret Keeper','Young Adult','@Publishquest ','Everything you’ve been told is true, but that is only part of the story.','genre-fiction','age-ya'],
-        ['Brian Schutter','http://amzn.com/B086WRSQJR/','Titanborn','Science Fiction','@BrianSchutter','Born far from Earth, the telepathic colonist Meera must overcome the trauma of loss and journey across Titan&rsquo;s dunes to find her missing friend.','genre-speculative','age-adult']
+        ['Brian Schutter','http://amzn.com/B086WRSQJR/','Titanborn','Science Fiction','@BrianSchutter','Born far from Earth, the telepathic colonist Meera must overcome the trauma of loss and journey across Titan&rsquo;s dunes to find her missing friend.','genre-speculative','age-adult'],
+        ['Paul Lisicky','https://bookshop.org/books/later-my-life-at-the-edge-of-the-world/9781644450161','Later: My Life at the Edge of the World','Literary','@Paul_Lisicky','Later is a coming-of-age memoir set in Provincetown, MA, at the height of the AIDS crisis in town in the early 1990s.','genre-fiction','age-adult']
     ];
 
 
@@ -133,7 +134,8 @@ $(function () {
         ['Deirdre Allen Timmons','http://www.deirdretimmons.com','Brain Candy','Memoir ','@timmonsdeirdre','A bold, hilarious. warts-and-all memoir about one woman’s battle  with an inoperable, malignant, and unwelcome brain tumor. ','genre-nonfiction','age-adult'],
 ['Titan Frey ','https://authortitanfrey26.wixsite.com/titanfrey','Reflection: The Paul Mann Story, A Player&rsquo;s Path: A Story About Life and Football','YA, Historical Fiction, Coming of Age','@Authortitanfrey','In a world where days are tough, and the rain pours, remember the sun will shine again. ','genre-fiction','age-ya'],
 ['Philip Woodrow Lewis','https://www.amazon.co.uk/-/e/B08BCNG2GH','Kung Fu Fighting Vampire Mermaids-Globe Zero','Urban Fantasy','@writerwoodrow','Just when you think you&rsquo;ve seen it all. Journey into a fantastical future with Kung Fu Fighting Vampire Mermaids - Globe Zero','genre-speculative','age-adult'],
-        ['Lori Yerxa','https://www.amazon.com/dp/1692325019  ','Pushing Through','Biography','@loriyerxa11','The Transformation of a Shattered Soul ','genre-nonfiction','age-adult']
+        ['Lori Yerxa','https://www.amazon.com/dp/1692325019  ','Pushing Through','Biography','@loriyerxa11','The Transformation of a Shattered Soul ','genre-nonfiction','age-adult'],
+        ['Holden Sheppard','https://www.amazon.com/Invisible-Boys-Holden-Sheppard-ebook/dp/B07SYGB3KY/','Invisible Boys','Young Adult','@V8Sheppard','On the surface, nerd Zeke, punk Charlie and footy jock Hammer look like they have nothing in common, but in private, all three sixteen-year-old boys are in the throes of coming to terms with their homosexuality in a town where it is invisible.','genre-fiction','age-ya']
     ];
 
 

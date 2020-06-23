@@ -1159,7 +1159,7 @@ video {
 }
 
 .who-we-are .container {
-    max-width: 800px;
+    max-width: 1000px;
 }
 
 .who-we-are .button {
@@ -1177,6 +1177,7 @@ video {
 /* PROMO */
 
 .promo {
+    position: relative;
     margin-top: 30px;
     margin-bottom: 50px;
     background: blue;
@@ -1184,13 +1185,48 @@ video {
     background-size: cover;
     background-position: center center;
 }
-
-.promo .container {
-    background: black;
+.promo:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.25);
 }
 
-.flex-row > div {
+.promo .container {
+    max-width: 1800px;
+}
+
+.promo .flex-row {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.promo .flex-row > div {
+    position: relative;
+    border-color: black;
+    border-width: 14px;
+    padding: 15px 15px 75px;
     background: white;
+    width: 33.3333%;
+    width: calc(100% / 3);
+    margin-top: -14px;
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.promo .flex-row > div:nth-of-type(3n + 2) {
+    margin-top: -30px;
+}
+
+.promo .flex-row > div:nth-of-type(3n + 3) {
+    margin-top: -60px;
+}
+
+.promo .flex-row > div:nth-of-type(3n + 4) {
+    margin-bottom: -30px;
 }
 
 .promo ul {
@@ -1199,20 +1235,24 @@ video {
 
 .promo h2 {
     font-size: 25px;
+    margin-top: 0;
     margin-bottom: 0;
     text-transform: uppercase;
 }
 
 .promo h3 {
     font-size: 22px !important;
-    margin-top: 0;
+    margin-top: 0.5rem;
     margin-bottom: 8px;
     font-style: italic;
     font-size: 1.35rem;
+    line-height: 1.3;
 }
 
 .promo p {
     font-size: 15px;
+    margin-bottom: 0.5rem;
+    line-height: 1.3;
 }
 
 .promo em {
@@ -1223,22 +1263,8 @@ video {
     font-size: 13px;
 }
 
-.promo .right {
-    border-color: black;
-    padding: 15px;
-    border-bottom-width: 60px;
-}
-
 .promo .flex-row .right p {
     max-width: none;
-}
-
-.promo .left p {
-    margin-bottom: 0.5rem;
-}
-
-.promo .left p:last-of-type {
-    margin-bottom: 0;
 }
 
 .promo-img {
@@ -1252,11 +1278,18 @@ video {
 }
 
 .promo-img.tellworthy {
+    padding-top: 40%;
     background-image: url('../img/promo-tellworthy-min.jpg');
 }
 
 .promo-img.fugitivepoems {
+    margin-top: 1rem;
+    padding-top: 40%;
     background-image: url('../img/promo-fugitive-min.jpg');
+}
+
+.promo-img.blackheart {
+    background-image: url('../img/promo-blackheart-min.jpg');
 }
 
 .promo iframe {
@@ -1264,18 +1297,20 @@ video {
     width: 100% !important;
 }
 
-.promo .flex-row.top .right {
-    padding-bottom: 35px;
-}
-
-.promo .flex-row.top .left {
-    border: 0;
-    padding: 15px;
-    border-bottom: 15px solid black;
-}
-
 .promo .link {
     white-space: nowrap;
+}
+
+.promo .button:not(.learn-more) {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.promo .button.learn-more {
+    position: absolute;
+    left: 15px;
+    bottom: 30px;
+    margin-bottom: 0;
 }
 
 
@@ -1498,6 +1533,22 @@ video {
     .peer-books {
         max-width: 200px;
     }
+    .promo {
+        padding: 16px 7px 30px;
+    }
+    .promo .flex-row > div {
+        width: 50%;
+        margin-top: 0 !important;
+        margin-bottom: -14px !important;
+        padding-bottom: 60px;
+    }
+    .promo .button.learn-more {
+        bottom: 15px;
+    }
+    .promo-img.tellworthy,
+    .promo-img.fugitivepoems {
+        padding-top: 30%;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -1675,21 +1726,24 @@ video {
     .container.directory {
         padding: 16px !important;
     }
-    .promo .right {
-        border: 0;
-        border-top: 15px solid black;
+    .promo {
+        padding: 16px 0 30px;
     }
     .promo .flex-row {
-        border-top: 15px solid black;
+        display: block;
     }
-    .promo .flex-row.top .left {
-        border-bottom: 0;
+    .promo .flex-row > div {
+        width: 100%;
+        text-align: left;
     }
-    .promo .flex-row.top .right {
-        padding-bottom: 15px;
+    .promo h2 {
+        font-size: 20px;
     }
-    .promo .flex-row.top .right .promo-img {
-        margin-bottom: 0;
+    .promo h3 {
+        font-size: 18px !important;
+    }
+    .promo p {
+        font-size: 13px;
     }
 }
 

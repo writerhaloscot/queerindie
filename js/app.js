@@ -152,7 +152,7 @@ $(function () {
 
     if (!sessionStorage.getItem('firstVisit')) {
         setTimeout(function () {
-            $('.lightbox').fadeIn();
+            // $('.lightbox').fadeIn();
         }, 500);
     }
 

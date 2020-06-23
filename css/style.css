@@ -1277,14 +1277,18 @@ video {
     background-position: center center;
 }
 
-.promo-img.tellworthy {
+.promo-img.tellworthy,
+.promo-img.sulkmedia,
+.promo-img.fugitivepoems {
     padding-top: 40%;
+}
+
+.promo-img.tellworthy {
     background-image: url('../img/promo-tellworthy-min.jpg');
 }
 
 .promo-img.fugitivepoems {
     margin-top: 1rem;
-    padding-top: 40%;
     background-image: url('../img/promo-fugitive-min.jpg');
 }
 
@@ -1545,6 +1549,7 @@ video {
     .promo .button.learn-more {
         bottom: 15px;
     }
+    .promo-img.sulkmedia,
     .promo-img.tellworthy,
     .promo-img.fugitivepoems {
         padding-top: 30%;

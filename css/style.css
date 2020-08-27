@@ -1189,6 +1189,7 @@ video {
     background-size: cover;
     background-position: center center;
 }
+
 .promo:after {
     content: '';
     position: absolute;
@@ -1196,7 +1197,7 @@ video {
     bottom: 0;
     left: 0;
     right: 0;
-    background: rgba(0,0,0,0.25);
+    background: rgba(0, 0, 0, 0.25);
 }
 
 .promo .container {
@@ -1214,24 +1215,27 @@ video {
     border-width: 14px;
     padding: 15px 15px 75px;
     background: white;
-    width: 33.3333%;
-    width: calc(100% / 3);
+    /* width: 33.3333%;
+    width: calc(100% / 3); */
+    width: 25%;
     margin-top: -14px;
     margin-left: -7px;
     margin-right: -7px;
 }
 
+/* 
 .promo .flex-row > div:nth-of-type(3n + 2) {
     margin-top: -30px;
 }
 
 .promo .flex-row > div:nth-of-type(3n + 3) {
-    margin-top: -60px;
+    margin-top: -30px;
 }
 
 .promo .flex-row > div:nth-of-type(3n + 4) {
     margin-bottom: -30px;
 }
+*/
 
 .promo ul {
     padding-left: 1rem;
@@ -1498,6 +1502,13 @@ video {
 
 
 /* RESPONSIVE */
+
+@media only screen and (max-width: 1440px) {
+    .promo .flex-row > div {
+        width: 50%;
+        max-width: 500px;
+    }
+}
 
 @media only screen and (max-width: 1024px) {
     .hero {

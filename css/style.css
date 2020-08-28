@@ -1223,6 +1223,12 @@ video {
     margin-right: -7px;
 }
 
+.promo .flex-row > div:nth-child(even) {
+    margin-top: -60px;
+    margin-bottom: 46px;
+}
+
+
 /* 
 .promo .flex-row > div:nth-of-type(3n + 2) {
     margin-top: -30px;
@@ -1331,6 +1337,7 @@ video {
 #footer {
     padding-top: 16px;
     padding-bottom: 16px;
+    padding-bottom: 100px;
     background: black;
 }
 
@@ -1394,6 +1401,198 @@ video {
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+}
+
+
+/* AD DRAWER */
+
+.ad-drawer {
+    position: fixed;
+    bottom: 0;
+    left: 60px;
+    right: 60px;
+    z-index: 99999;
+    transition: 0.5s bottom ease;
+    transition-delay: 0.25s;
+}
+
+.ad-drawer.closed {
+    bottom: -200px;
+}
+
+.ad-drawer .container {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    background: white;
+    color: black;
+    padding: 0;
+    max-width: 1168px;
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.25), 0 -10px 40px rgba(0, 0, 0, 0.25);
+}
+
+.ad-drawer .container > div,
+.ad-drawer .container > a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
+.ad-title,
+.ad-reload {
+    width: 140px;
+}
+
+.ad-title {
+    background-image: url(../img/rainbow-261419-min.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    text-shadow: 0 0 4px white, 0 0 20px white
+}
+
+.ad-queer,
+.ad-ally {
+    width: calc(50% - 140px);
+    background: white;
+}
+
+.ad-drawer strong {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.02rem;
+    font-size: 12px;
+    color: black;
+    line-height: 1;
+    margin-bottom: 2px;
+}
+
+.ad-drawer a {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    font-size: 12px;
+    color: black;
+}
+
+.ad-drawer a:hover {
+    color: greenyellow;
+}
+
+.ad-reload {
+    text-align: right;
+    background: blue;
+    color: white !important;
+}
+
+.ad-reload:hover {
+    color: black !important;
+    background: greenyellow;
+}
+
+.ad-drawer span,
+.ad-drawer i {
+    display: inline;
+    vertical-align: middle;
+}
+
+.ad-drawer i {
+    display: inline-block;
+    font-size: 16px;
+    margin-right: 4px;
+}
+
+.ad-queer a i,
+.ad-ally a i {
+    color: blue;
+}
+
+.ad-queer a:hover i,
+.ad-ally a:hover i {
+    color: greenyellow;
+}
+
+.ad-drawer span {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ad-queer-title,
+.ad-ally-title {
+    margin-bottom: 2px;
+}
+
+.ad-queer-title,
+.ad-ally-title,
+.ad-queer-twitter,
+.ad-ally-twitter {
+    padding-left: 25px;
+    position: relative;
+}
+
+.ad-queer-title i,
+.ad-ally-title i,
+.ad-queer-twitter i,
+.ad-ally-twitter i {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.ad-queer-title span,
+.ad-ally-title span,
+.ad-queer-twitter span,
+.ad-ally-twitter span {
+    display: block;
+    background: black;
+    color: white;
+    padding: 2px 4px;
+}
+
+.ad-queer-title:hover span,
+.ad-ally-title:hover span,
+.ad-queer-twitter:hover span,
+.ad-ally-twitter:hover span {
+    background: greenyellow;
+    color: black;
+}
+
+.ad-queer-title span,
+.ad-ally-title span {
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.ad-queer-twitter span,
+.ad-ally-twitter span {
+    font-size: 13px;
+}
+
+.ad-drawer em {
+    font-size: inherit;
+}
+
+.ad-title span,
+.ad-reload span {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.ad-title i {
+    margin-right: 8px;
+}
+
+.ad-reload i {
+    margin-left: 8px;
+    color: inherit;
 }
 
 
@@ -1568,6 +1767,23 @@ video {
     .promo-img.tellworthy,
     .promo-img.fugitivepoems {
         padding-top: 30%;
+    }
+    .ad-title span,
+    .ad-reload span {
+        font-size: 0;
+        text-align: center;
+    }
+    .ad-title i,
+    .ad-reload i {
+        margin: 0 !important;
+    }
+    .ad-title,
+    .ad-reload {
+        width: 50px;
+    }
+    .ad-queer,
+    .ad-ally {
+        width: calc(50% - 50px);
     }
 }
 
@@ -1765,6 +1981,18 @@ video {
     .promo p {
         font-size: 13px;
     }
+    .ad-drawer .container > div,
+    .ad-drawer .container > a {
+        padding: 0.25rem;
+    }
+    .ad-title,
+    .ad-reload {
+        width: 35px;
+    }
+    .ad-queer,
+    .ad-ally {
+        width: calc(50% - 35px);
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -1779,5 +2007,32 @@ video {
     }
     #header .social {
         padding: 0 10px 4px;
+    }
+    .ad-drawer {
+        left: 10px;
+        right: 10px;
+    }
+    .scrollTop {
+        bottom: 70px;
+    }
+    .ad-queer-title i,
+    .ad-ally-title i,
+    .ad-queer-twitter i,
+    .ad-ally-twitter i {
+        font-size: 10px;
+    }
+    .ad-queer-title,
+    .ad-ally-title,
+    .ad-queer-twitter,
+    .ad-ally-twitter {
+        padding-left: 15px;
+    }
+    .ad-drawer strong,
+    .ad-queer-title span,
+    .ad-ally-title span {
+        font-size: 10px;
+    }
+    .ad-queer-twitter span, .ad-ally-twitter span {
+        font-size: 9px;
     }
 }

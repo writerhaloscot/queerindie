@@ -392,7 +392,7 @@ video {
 .hero-covers {
     display: block;
     max-width: 800px !important;
-    margin: -80px auto -60px;
+    margin: 10px auto 0;
     width: 100%;
     padding: 0 16px;
 }
@@ -1386,6 +1386,7 @@ video {
 .footer-titles-wrapper {
     position: relative;
     padding-top: 56%;
+    padding-top: 35%;
     margin: 0 auto 20px;
     width: 100%;
 }
@@ -1397,7 +1398,7 @@ video {
     bottom: 0;
     right: 0;
     display: block !important;
-    background-image: url('../img/covers/covers-titles-white-min.png');
+    background-image: url('../img/covers/covers-titles-min.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
@@ -1883,7 +1884,7 @@ video {
     }
     .hero-covers {
         max-width: 600px !important;
-        margin: -20px auto -60px;
+        margin: 0px auto;
     }
     .lightbox-content {
         padding: 0 1rem;
@@ -1909,7 +1910,8 @@ video {
         font-size: 40px;
     }
     .hero.inner-page {
-        min-height: 304px;
+        min-height: 250px;
+        padding-bottom: 10px;
     }
     .hero-video-wrapper {
         padding-top: 100%;

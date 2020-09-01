@@ -93,6 +93,7 @@ $(function () {
     ];
 
 
+    
     /* FRIENDS OF Qi */
 
     var dirFr = [

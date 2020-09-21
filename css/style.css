@@ -884,6 +884,10 @@ video {
     content: '\f56b\00a0\f02e';
 }
 
+.genre-fiction.genre-love:after {
+    content: '\f56b\00a0\f004';
+}
+
 
 /* SORT */
 

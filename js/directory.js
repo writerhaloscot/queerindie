@@ -90,7 +90,8 @@ $(function () {
 ['Nick Askew', 'https://www.amazon.com/dp/B08DHXYD33', 'Ensoulment ', 'Sci-fi/fantasy ', '@nickaskewwrites', 'After Andrew dies, death thrusts him into a strange world full of outlandish and dangerous inhabitants where he must search out the other half of his soul if he ever hopes to find his way home again.', 'genre-speculative', 'age-adult'],
 ['Dan Cole', 'https://www.dancoleauthor.com/', 'Lani: The Girl Without Fear', 'YA Fantasy', '@Icedan_HDH', 'In a moonless world fear controls all. One girl feels none of it and is determined to escape. Out of the city, she learns of love, life, and death. ', 'genre-speculative', 'age-ya'],
         ['Fiona Glass','https://www.amazon.co.uk/dp/B084GVG927','Echoes of Blood','Paranormal romance','@F_Glass_Author','A lonely man... a coven of vampires... the lure of history - and blood.','genre-speculative genre-love','age-adult'],
-        ['Fiona Glass','https://www.amazon.co.uk/dp/B08943CDB3','Just Visiting','Paranormal romance','@F_Glass_Author','Can love follow someone through time itself?','genre-speculative genre-love','age-adult']
+        ['Fiona Glass','https://www.amazon.co.uk/dp/B08943CDB3','Just Visiting','Paranormal romance','@F_Glass_Author','Can love follow someone through time itself?','genre-speculative genre-love','age-adult'],
+        ['W D Foster-Graham','https://wfostergrahamauthor.com/  ','Christopher Family Novel Series','Historical Fiction/Romance/Gay & Lesbian','@WDFosterGraham1','Stories of a large, wealthy, and powerful African-American family and their friends, where being LGBT is simply a fact of life.','genre-fiction genre-love','age-adult']
     ];
 
 

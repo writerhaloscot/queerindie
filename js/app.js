@@ -157,4 +157,12 @@ $(function () {
         }, 500);
     }
 
+    
+    // AWARDS
+    
+    $('.accordion-title').on('click', function(e) {
+        e.preventDefault();
+        $(this).parent().toggleClass('open');
+        $(this).parent().find('.accordion-body').slideToggle();
+    });
 });

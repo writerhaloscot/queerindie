@@ -1731,6 +1731,7 @@ video {
 .accordion-title {
     position: relative;
     padding: 12px 32px;
+    padding-right: 64px;
     color: black !important;
     cursor: pointer;
     font-weight: bold;
@@ -1738,9 +1739,40 @@ video {
     border: 8px solid blue;
 }
 
+.accordion:nth-child(10n + 1) * {
+    border-color: dodgerblue;
+}
+.accordion:nth-child(10n + 2) * {
+    border-color: deepskyblue;
+}
+.accordion:nth-child(10n + 3) * {
+    border-color: darkturquoise;
+}
+.accordion:nth-child(10n + 4) * {
+    border-color: lightseagreen;
+}
+.accordion:nth-child(10n + 5) * {
+    border: mediumseagreen;
+}
+.accordion:nth-child(10n + 6) * {
+    border-color: yellowgreen;
+}
+.accordion:nth-child(10n + 7) * {
+    border-color: orange;
+}
+.accordion:nth-child(10n + 8) * {
+    border-color: darkorange;
+}
+.accordion:nth-child(10n + 9) * {
+    border-color: coral;
+}
+.accordion:nth-child(10n + 10) * {
+    border-color: tomato;
+}
+
 .accordion-title:hover {
     background: #f5f5f5;
-    color: blue !important;
+    color: #555555 !important;
 }
 
 .accordion-title > i.fas {

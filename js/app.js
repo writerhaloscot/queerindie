@@ -5,7 +5,7 @@ $(function () {
     var m = '<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="UTF-8"><meta itemprop="name" content="Queer Indie"><meta itemprop="description" content="Queer Indie is a group of cross-genre authors writing LGBTQ books. Every book has a home. Write the rainbow. This is YOUR story. Be your own identity.">';
     var s = '<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400|Roboto:400,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">';
     var v = 'img/favicon.png';
-    var c = 'css/style.css?v=1.1.5';
+    var c = 'css/style.css?v=1.1.6';
     var h = 'includes/header.html';
     var f = 'includes/footer.html';
     var l = 'includes/lightbox.html';
@@ -164,5 +164,7 @@ $(function () {
         e.preventDefault();
         $(this).parent().toggleClass('open');
         $(this).parent().find('.accordion-body').slideToggle();
+        $(this).parent().siblings().removeClass('open');
+        $(this).parent().siblings().find('.accordion-body').slideUp();
     });
 });

@@ -1705,6 +1705,24 @@ video {
 }
 
 
+/* AWARDS */
+
+.directory.awards {
+    margin-bottom: 0 !important;
+}
+
+.awards-wrapper {
+    padding-bottom: 60px;
+    border-bottom: 12px solid white;
+}
+
+.awards-wrapper iframe {
+    display: block;
+    margin: 0 auto;
+    max-width: 100% !important;
+}
+
+
 /* RESPONSIVE */
 
 @media only screen and (max-width: 1440px) {
@@ -2038,7 +2056,8 @@ video {
     .ad-ally-title span {
         font-size: 10px;
     }
-    .ad-queer-twitter span, .ad-ally-twitter span {
+    .ad-queer-twitter span,
+    .ad-ally-twitter span {
         font-size: 9px;
     }
 }

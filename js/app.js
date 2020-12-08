@@ -157,14 +157,14 @@ $(function () {
         }, 500);
     }
 
-    
+
     // AWARDS
-    
-    $('.accordion-title').on('click', function(e) {
+
+    $('.accordion-title').on('click', function (e) {
         e.preventDefault();
         $(this).parent().toggleClass('open');
-        $(this).parent().find('.accordion-body').slideToggle();
+        $(this).parent().find('.accordion-body').slideToggle(250);
         $(this).parent().siblings().removeClass('open');
-        $(this).parent().siblings().find('.accordion-body').slideUp();
+        $(this).parent().siblings().find('.accordion-body').slideUp(250);
     });
 });

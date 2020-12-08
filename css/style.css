@@ -87,7 +87,8 @@ em {
 }
 
 strong {
-    font-weight: 400;
+    font-weight: 700;
+    font-size: inherit;
 }
 
 hr {
@@ -411,6 +412,12 @@ video {
 .flex-row > div {
     width: 50%;
     border: 15px solid white;
+}
+
+.flex-row .fifth {
+    display: block;
+    width: 20%;
+    padding: 15px;
 }
 
 .flex-row > div.right {
@@ -1711,7 +1718,19 @@ video {
     margin-bottom: 0 !important;
 }
 
+.container.directory.awards > h2.text-center {
+    max-width: 640px;
+    margin: 0 auto 12px;
+}
+
+.container.directory.awards p.text-left {
+    max-width: 640px;
+    margin: 0 auto 12px;
+    font-size: 16px;
+}
+
 .awards-wrapper {
+    margin-top: 24px;
     padding-bottom: 60px;
     border-bottom: 12px solid white;
 }
@@ -1724,19 +1743,40 @@ video {
 
 .accordion {
     max-width: 640px;
-    margin: 16px auto 0;
+    margin: 8px auto 0;
     background: #eeeeee;
+}
+
+.accordion-key {
+    max-width: 640px;
+    margin: 32px auto 0;
+}
+
+.accordion-key ul {
+    padding-left: 1rem;
+}
+
+.accordion-key li {
+    font-size: 0.85rem;
+    margin-top: 0.2rem;
+}
+
+.accordion-key small {
+    display: block;
+    font-size: 0.75em;
+    margin-top: 16px;
 }
 
 .accordion-title {
     position: relative;
-    padding: 12px 32px;
+    padding: 8px 16px;
     padding-right: 64px;
+    font-size: 16px;
     color: black !important;
     cursor: pointer;
     font-weight: bold;
     background: white;
-    border: 8px solid blue;
+    border: 4px solid blue;
 }
 
 .accordion:nth-child(13n + 1) * {
@@ -1800,7 +1840,7 @@ video {
     display: block;
     color: inherit !important;
     position: absolute;
-    right: 32px;
+    right: 16px;
     top: 50%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
@@ -1818,8 +1858,61 @@ video {
 
 .accordion-body {
     display: none;
-    border: 8px solid blue;
+    border: 4px solid blue;
     border-top: 0;
+    max-height: 390px;
+}
+
+.accordion iframe {
+    -ms-zoom: 0.75;
+    -moz-transform: scale(0.75);
+    -moz-transform-origin: 0 0;
+    -o-transform: scale(0.75);
+    -o-transform-origin: 0 0;
+    -webkit-transform: scale(0.75);
+    -webkit-transform-origin: 0 0;
+    min-width: 133.5% !important;
+    height: 500px !important;
+}
+
+.home-awards a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.home-awards a:hover {
+    color: blue;
+}
+
+.home-awards span {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.awards-category {
+    background: black;
+    color: white;
+    padding: 8px;
+    letter-spacing: 0.05rem;
+}
+
+.home-awards a:hover .awards-category {
+    background: blue;
+}
+
+.awards-category {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-transform: uppercase;
+    font-size: 13px;
+    margin-bottom: 4px;
+}
+
+.awards-author {
+    font-size: 18px;
 }
 
 
@@ -1845,6 +1938,16 @@ video {
     .flex-row .right.black-border {
         max-height: 300px;
         overflow: hidden;
+    }
+    .flex-row.home-awards {
+        max-width: 600px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .flex-row .fifth {
+        width: 33.33333%;
+        width: calc(100% / 3);
     }
     .inner-video {
         overflow: hidden;
@@ -2042,10 +2145,17 @@ video {
         width: 200%;
         max-width: 200% !important;
     }
-    .flex-row {
+    .flex-row:not(.home-awards) {
         display: block;
         max-width: 400px;
         margin: 0 auto;
+    }
+    .flex-row.home-awards {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    .flex-row .fifth {
+        width: 50%;
     }
     .container.directory .flex-row {
         max-width: none;
@@ -2159,5 +2269,18 @@ video {
     .ad-queer-twitter span,
     .ad-ally-twitter span {
         font-size: 9px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .flex-row.home-awards {
+        display: block;
+        max-width: 100%;
+    }
+    .flex-row .fifth {
+        width: 100%;
+        max-width: 200px;
+        margin-left: auto;
+        margin-right: auto;
     }
 }

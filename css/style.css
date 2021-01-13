@@ -202,10 +202,11 @@ video {
 
 #header .inner {
     color: white;
-    width: 140px;
+    width: 100px;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     font-size: 12px;
+    cursor: pointer;
 }
 
 #header .inner:first-of-type {
@@ -245,8 +246,8 @@ video {
 .hero {
     position: relative;
     border-top: 60px solid black;
-    padding: 110px 0 145px;
-    background-image: url('../img/rainbow-261419-min.jpg');
+    padding: 70px 0 105px;
+    background-image: url('../img/rainbow-313415-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -267,6 +268,8 @@ video {
     left: 50%;
     transform: translate(-50%, -50%);
     min-height: 100%;
+    mix-blend-mode: screen;
+    opacity: 0.88;
 }
 
 .hero-video {
@@ -274,7 +277,6 @@ video {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    opacity: 0.25;
     margin: 0 auto;
     width: 100%;
     min-height: 100%;
@@ -292,14 +294,20 @@ video {
     font-size: 84px;
     font-weight: 400;
     margin: 0;
-    text-shadow: 0 0 100px greenyellow;
+    color: white;
+}
+
+.hero h1 span {
+    font: inherit;
 }
 
 .hero.inner-page {
     position: relative;
-    min-height: 540px;
-    padding-top: 40px;
+    min-height: 450px;
+    padding-top: 55px;
     padding-bottom: 80px;
+    background-size: contain;
+    background-color: black;
 }
 
 .hero.inner-page:after {
@@ -310,6 +318,7 @@ video {
     bottom: 0;
     left: 0;
     right: 0;
+    display: none;
 }
 
 .hero.inner-page h1 {
@@ -325,7 +334,8 @@ video {
     padding: 20px 0;
 }
 
-.hero.inner-page-short:after {
+
+/* .hero.inner-page-short:after {
     content: '';
     background: black;
     height: 120px;
@@ -336,10 +346,11 @@ video {
     bottom: -80px;
     -webkit-transform: rotate(2deg);
     transform: rotate(2deg);
-}
+} */
 
 .hero.inner-page-short h1 {
     font-size: 60px;
+    text-shadow: 0 0 30px black, 0 0 90px black;
 }
 
 .hero .container {
@@ -366,6 +377,10 @@ video {
     display: inline-block;
     text-transform: uppercase;
     letter-spacing: 0.04rem;
+    box-shadow: 3px 3px 0 white;
+    border: 1px solid white;
+    width: calc(100% - 32px);
+    max-width: 320px;
 }
 
 .hero a span {
@@ -392,7 +407,7 @@ video {
 
 .hero-covers {
     display: block;
-    max-width: 800px !important;
+    max-width: 500px !important;
     margin: 10px auto 0;
     width: 100%;
     padding: 0 16px;
@@ -499,11 +514,14 @@ video {
 }
 
 .map {
-    min-height: 600px;
-    background-image: url('../img/map-1247143-min.jpg');
+    min-height: 264px;
+    background-image: url('../img/background-313418-invert-min.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+    margin-top: -30px !important;
+    padding-top: 0 !important;
+    margin-bottom: 30px !important;
 }
 
 .author {
@@ -607,8 +625,9 @@ video {
 }
 
 .peer-nav a img {
-    height: 48px;
-    vertical-align: bottom;
+    height: 40px;
+    vertical-align: top;
+    margin: 2px 4px;
 }
 
 .peer-tab {
@@ -1172,6 +1191,10 @@ video {
 
 .who-we-are {
     padding: 40px 0 100px;
+    background-image: url(../img/fractal-2329803-min.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
 }
 
 .who-we-are .container {
@@ -1196,10 +1219,10 @@ video {
     position: relative;
     margin-top: 30px;
     margin-bottom: 50px;
-    background: blue;
-    background-image: url(../img/rainbow-261419-min.jpg);
-    background-size: cover;
-    background-position: center center;
+    background: black;
+    background-image: url(../img/rainbow-313415-min.jpg);
+    background-size: 1500px auto;
+    background-position: bottom center;
 }
 
 .promo:after {
@@ -1458,8 +1481,8 @@ video {
 }
 
 .ad-title {
-    background-image: url(../img/rainbow-261419-min.jpg);
-    background-size: cover;
+    background-image: url(../img/rainbow-313415-min.jpg);
+    background-size: 700% auto;
     background-position: center center;
     background-repeat: no-repeat;
     text-shadow: 0 0 4px white, 0 0 20px white
@@ -1930,11 +1953,11 @@ video {
     .hero {
         padding: 100px 0;
     }
-    .hero.inner-page {
-        min-height: 485px;
+    .hero-covers {
+        max-width: 350px !important;
     }
-    .map {
-        min-height: 450px;
+    .hero.inner-page {
+        padding-top: 90px;
     }
     .flex-row .right.black-border {
         max-height: 300px;
@@ -2020,9 +2043,10 @@ video {
     }
     .hero {
         padding: 40px 0;
+        background-size: 1400px auto;
     }
     .hero.inner-page {
-        min-height: 326px;
+        padding-top: 73px;
     }
     .hero h1 {
         font-size: 56px;
@@ -2077,9 +2101,6 @@ video {
         font-size: 1.25rem;
         letter-spacing: 0.03rem;
         text-transform: uppercase;
-    }
-    .peer-nav a img {
-        height: 32px;
     }
     .peer-title i {
         display: block;

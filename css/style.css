@@ -98,6 +98,10 @@ hr {
     height: 12px;
 }
 
+hr.white {
+    background: white;
+}
+
 iframe,
 video,
 img {
@@ -1751,6 +1755,11 @@ video {
     max-width: 640px;
     margin: 0 auto 12px;
     font-size: 16px;
+}
+
+.container.directory.awards hr {
+    max-width: 640px;
+    margin: 1.5rem auto 0;
 }
 
 .awards-wrapper {

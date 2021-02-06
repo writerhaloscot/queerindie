@@ -3,6 +3,8 @@
 * Do 3rd place, 2nd place, 1st w/ prize
 * Huge amount of votes, should be incredibly proud, highly competitive
 * Apologize if pronounce name wrong, but I am American
+* Please buy books from the winners and from the directory on QueerIndie.com; support the authors who list with us. This is a community. You can even sort by genre, which was a pain in the ass to code.
+* Shout-out to WCCS & StorytellPod, amazing supporters of authors.
 
 TOTAL VOTES: 790 between all categories
 TOTAL DIRECTORY LISTINGS: 157

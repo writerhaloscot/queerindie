@@ -383,8 +383,8 @@ video {
     letter-spacing: 0.04rem;
     box-shadow: 3px 3px 0 white;
     border: 1px solid white;
-    width: calc(100% - 32px);
-    max-width: 320px;
+    /* width: calc(100% - 32px);
+    max-width: 320px; */
 }
 
 .hero a span {

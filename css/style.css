@@ -504,6 +504,16 @@ video {
     background: blue;
 }
 
+.button.white {
+    background: white;
+    color: black;
+}
+
+.button.white:hover {
+    background: blue;
+    color: white;
+}
+
 .link {
     display: inline-block;
     color: black;

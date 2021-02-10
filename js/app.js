@@ -9,7 +9,6 @@ $(function () {
     var h = 'includes/header.html';
     var f = 'includes/footer.html';
     var l = 'includes/lightbox.html';
-    var g = '<script async src="https://www.googletagmanager.com/gtag/js?id=UA-160020484-1"></script><script>window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag("js", new Date()); gtag("config", "UA-160020484-1");</script>';
 
     if (window.location.pathname != '/') {
         v = '../' + v;
@@ -19,7 +18,7 @@ $(function () {
         l = '../' + l;
     }
 
-    $('head').prepend(m + g + s);
+    $('head').prepend(m + s);
     $('head').append('<link rel="shortcut icon" href="' + v + '" type="image/x-icon" /><link rel="stylesheet" href="' + c + '" />');
     $('#header').load(h);
     $('#footer').load(f);

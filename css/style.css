@@ -2005,8 +2005,14 @@ video {
     padding: 4px 8px !important;
 }
 
-section.policy ul {
+.policy ul {
     padding-left: 1rem !important;
+    margin-top: 1rem;
+}
+
+.policy div {
+    margin-top: 1rem;
+    font: inherit;
 }
 
 /* END GDPR COMPLIANCE */

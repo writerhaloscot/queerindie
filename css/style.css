@@ -522,6 +522,24 @@ video {
     color: white;
 }
 
+.button.blue {
+    background: blue;
+    font-weight: 700;
+}
+
+.button.blue:hover {
+    background: greenyellow;
+}
+
+.button.big {
+    font-size: 16px;
+}
+
+.button.big span {
+    font: inherit;
+    color: inherit;
+}
+
 .link {
     display: inline-block;
     color: black;

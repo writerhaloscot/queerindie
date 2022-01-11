@@ -113,7 +113,7 @@ $(function () {
         ['Carmen Loup','http://www.CarmenLoup.com','The Audacity Series','Humor, sci-fi, and spec','@Carmen_Loup','May loves racing the Audacity, the most obnoxiously orange rocket in the universe; her best friend and co-pilot Xan would rather watch &ldquo;I Love Lucy&rdquo; on the couch, but both their plans are constantly thwarted by an immortal, body-hopping being who calls herself Chaos.','genre-speculative','age-adult'],
         ['Jon Ford','https://jonfordauthor.com/tepris-press/','Hunters / The Ballad of the Songbird - Book 1','Urban Fantasy','@_Knightingale_','In a world where all the monsters of myth and legend are frighteningly real, who are the hunted...and who are the Hunters?','genre-speculative','age-adult'],
         ['Minerrale','https://tapas.io/series/Snowdrops','Snowdrops','Dystopic Bi Romance','@minerrale','Percy and Tam have nothing but their wits, a sling, and squirrel stew to survive the Madness that has overcome humanity. Oh, and Hans with his flamethrower.','genre-speculative genre-love','age-adult'],
-        ['JC Calciano','https://jccalciano.com/','Revenge of the Brobot, The 10 Year Plan, Steamy Stories','mm romance, comedy, camp, pulp','@cinema175','A lone man, armed only with a laptop and his rapier wit, attempts to bring steamy, sexy stories to a cold, dark, lonely world.','genre-fiction genre-love','age-adult']
+        ['JC Calciano','https://jccalciano.com/','Revenge of the Brobot, The 10 Year Plan, Steamy Stories','MM romance, comedy, camp, pulp','@cinema175','A lone man, armed only with a laptop and his rapier wit, attempts to bring steamy, sexy stories to a cold, dark, lonely world.','genre-fiction genre-love','age-adult']
     ];
 
 

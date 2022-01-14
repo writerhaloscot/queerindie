@@ -1800,8 +1800,12 @@ video {
 }
 
 .container.directory.awards p.text-left small {
-    font-size: 14px;
+    font-size: 15px;
     font-style: italic;
+    font-weight: bold;
+    color: greenyellow;
+    line-height: 1.2;
+    display: inline-block;
 }
 
 .container.directory.awards hr {

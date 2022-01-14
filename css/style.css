@@ -1785,6 +1785,7 @@ video {
 
 .directory.awards {
     margin-bottom: 0 !important;
+    padding-bottom: 0 !important;
 }
 
 .container.directory.awards > h2.text-center {
@@ -1796,6 +1797,11 @@ video {
     max-width: 640px;
     margin: 0 auto 12px;
     font-size: 16px;
+}
+
+.container.directory.awards p.text-left small {
+    font-size: 14px;
+    font-style: italic;
 }
 
 .container.directory.awards hr {
@@ -1824,6 +1830,7 @@ video {
 .accordion-key {
     max-width: 640px;
     margin: 32px auto 0;
+    color: white;
 }
 
 .accordion-key ul {

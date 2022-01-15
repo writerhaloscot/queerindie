@@ -118,7 +118,9 @@ $(function () {
         ['Jon Wesley Huff','https://smile.amazon.com/dp/919874254X','In The Dark of the Grove','Horror','@jonwesleyhuff','Discover the dark heart of America&rsquo;s heartland.','genre-speculative','age-adult'],
         ['L.B. Shimaira','https://shimaira.com','My Lord (The Transcended)','Dark fiction (horror/pnr/thriller/SFF)','@LBShimaira','Meya is forced to work as a chambermaid for the cruel Lord Deminas and slowly uncovers all the dark secrets surrounding her not-quite-human master.','genre-speculative','age-adult'],
         ['A.L. Haringrey','http://getbook.at/ACureForHumanity','A Cure for Humanity','Urban Fantasy','@alharingrey ','An anxious office worker must prevent the oppression of vampires and werewolves by stopping his boss—and lover—from developing a genetic &lsquo;cure&rsquo; to turn them into humans.','genre-speculative','age-adult'],
-        ['Claire Olivia Golden','https://claireoliviagolden.com/','Unraveled, The Lost Girl of Goose Creek','Fantasy','@','Unraveled: In this retelling of Sleeping Beauty, two girls fall in love while trying to break the curse on a crochet shawl. No twitter, but IG: @onceuponayarn.','genre-speculative','age-adult']
+        ['Claire Olivia Golden','https://claireoliviagolden.com/','Unraveled, The Lost Girl of Goose Creek','Fantasy','@','Unraveled: In this retelling of Sleeping Beauty, two girls fall in love while trying to break the curse on a crochet shawl. No twitter, but IG: @onceuponayarn.','genre-speculative','age-adult'],
+        ['Jess Newton ','https://www.jessnewton.org/','Posterity ','Sci fi/fantasy ','@AuthorJNewton ','150 years in the future, the last humans are approaching their new home - but will they find more than just a planet? ','genre-speculative','age-adult'],
+['Maxime Jaz','https://getbook.at/Fall-MaximeJaz','Fall','MM romance laced with erotica','@maximejaz','When you think you have everything, one small step twists your life around.','genre-love','age-adult']
     ];
 
 

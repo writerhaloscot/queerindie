@@ -2,7 +2,6 @@ $(function () {
 
 
     /* QUEER LITERATURE */
-
     var dirQL = [
 ['Jaimie N. Schock', 'https://www.amazon.com/Jaimie-N.-Schock/e/B07THB22QK?ref_=dbs_p_ebk_r00_abau_000000', 'The Talisman War Series', 'Adult Fantasy', '@Heroes_Get_Made', 'The world is quickly descending into war between powerful magic users, and it&rsquo;s up to a select few to stop it.', 'genre-speculative', 'age-adult'],
 ['Sheena C. Howard', 'https://www.amazon.com/Ninas-Whisper-Sheena-Howard-ebook/dp/B0848YGLTL', 'Nina&rsquo;s Whisper', 'Lesbian fiction, Domestic suspense', '@DrSheenaHoward', 'A med school graduate returns to her hometown and falls for an enigmatic young woman who conceals a scurrilous and compulsive nature. ', 'genre-suspense genre-love', 'age-adult'],

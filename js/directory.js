@@ -121,7 +121,9 @@ $(function () {
         ['Claire Olivia Golden','https://claireoliviagolden.com/','Unraveled, The Lost Girl of Goose Creek','Fantasy','@','Unraveled: In this retelling of Sleeping Beauty, two girls fall in love while trying to break the curse on a crochet shawl. No twitter, but IG: @onceuponayarn.','genre-speculative','age-adult'],
         ['Jess Newton ','https://www.jessnewton.org/','Posterity ','Sci fi/fantasy ','@AuthorJNewton ','150 years in the future, the last humans are approaching their new home - but will they find more than just a planet? ','genre-speculative','age-adult'],
 ['Maxime Jaz','https://getbook.at/Fall-MaximeJaz','Fall','MM romance laced with erotica','@maximejaz','When you think you have everything, one small step twists your life around.','genre-love','age-adult'],
-        ['J.D. Cunegan','https://jdcuneganbooks.com','Jill Andersen series (five novels), Notna, Legends of the Gem, The Art of Reading','Mystery/Superhero/Fantasy','@JD_Cunegan','Jill Andersen is a war veteran, a homicide cop, and a superhero. But is she a hero?','genre-speculative','age-adult']
+        ['J.D. Cunegan','https://jdcuneganbooks.com','Jill Andersen series (five novels), Notna, Legends of the Gem, The Art of Reading','Mystery/Superhero/Fantasy','@JD_Cunegan','Jill Andersen is a war veteran, a homicide cop, and a superhero. But is she a hero?','genre-speculative','age-adult'],
+        ['Rexx Deane','https://rexxdeane.com','Synthesis: Weave (trilogy)','Sci-fi','@RexxDeane','Sebastian knows the evidence from the bombing aboard his station couldn&rsquo;t magically disappear, yet when he and Aryx, a disabled ex-marine, travel the galaxy to find the cause, there seems to be no other explanation.','genre-speculative','age-adult'],
+['April-Jane Rowan','https://gurtdogpress.com/april-jane-rowan/','Lovelorn, Beneath A Bethel','Horror Fantasy ','@apriljanerowan','An illustrated novella about a culture where teeth are pulled in a holy ceremony and replaced by magical wish granting ones, but at what cost?','genre-speculative','age-adult']
     ];
 
 

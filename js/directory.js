@@ -124,7 +124,8 @@ $(function () {
         ['J.D. Cunegan','https://jdcuneganbooks.com','Jill Andersen series (five novels), Notna, Legends of the Gem, The Art of Reading','Mystery/Superhero/Fantasy','@JD_Cunegan','Jill Andersen is a war veteran, a homicide cop, and a superhero. But is she a hero?','genre-speculative','age-adult'],
         ['Rexx Deane','https://rexxdeane.com','Synthesis: Weave (trilogy)','Sci-fi','@RexxDeane','Sebastian knows the evidence from the bombing aboard his station couldn&rsquo;t magically disappear, yet when he and Aryx, a disabled ex-marine, travel the galaxy to find the cause, there seems to be no other explanation.','genre-speculative','age-adult'],
 ['April-Jane Rowan','https://gurtdogpress.com/april-jane-rowan/','Lovelorn, Beneath A Bethel','Horror Fantasy ','@apriljanerowan','An illustrated novella about a culture where teeth are pulled in a holy ceremony and replaced by magical wish granting ones, but at what cost?','genre-speculative','age-adult'],
-        ['Amy Campbell','https://www.amycampbell.info/my-books','Tales of the Outlaw Mages','Epic Fantasy','@rawrbear','Unless this outlaw mage tames his magic, everyone he cares about will be crushed by the enemy.','genre-speculative','age-adult']
+        ['Amy Campbell','https://www.amycampbell.info/my-books','Tales of the Outlaw Mages','Epic Fantasy','@rawrbear','Unless this outlaw mage tames his magic, everyone he cares about will be crushed by the enemy.','genre-speculative','age-adult'],
+        ['Kevin Goode-Lee','https://www.amazon.com/dp/B09KVDCWMF','The Kai Logan Series','Mystery','@KaiLogan90','A casino dealer bets his life to find the truth!','genre-suspense','age-adult']
     ];
 
 

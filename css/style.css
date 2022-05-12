@@ -268,6 +268,11 @@ video {
     overflow: hidden;
 }
 
+.hero-hdg {
+    margin-top: 0 !important;
+    line-height: 1.1;
+}
+
 .hero-video-wrapper {
     width: 100%;
     padding-top: 56.25%;
@@ -479,6 +484,53 @@ video {
 .flex-row .right h2 {
     margin-top: 10px;
 }
+
+
+/* BOOKS GRID */
+
+.books-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: -2px;
+    margin-right: -2px;
+}
+
+.books-grid > img {
+    display: block;
+    padding: 2px;
+    width: calc(100% / 9);
+}
+
+.books-section p {
+    margin-bottom: 0.5rem;
+}
+
+.lazy-img:not(.loaded) {
+    height: 205px;
+    position: relative;
+}
+
+.lazy-img:not(.loaded):after {
+    content: '\f110';
+    font-family: 'Font Awesome 5 Free';
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 205px;
+    position: absolute;
+    z-index: 1;
+    top: 2px;
+    left: 2px;
+    right: 2px;
+    bottom: 2px;
+    background: #eee;
+    color: #ccc;
+}
+
+
+/* END BOOKS GRID */
 
 .lgbtq-header {
     background: black;
@@ -2044,6 +2096,7 @@ video {
     font: inherit;
 }
 
+
 /* END GDPR COMPLIANCE */
 
 
@@ -2141,6 +2194,12 @@ video {
     .ad-queer,
     .ad-ally {
         width: calc(50% - 50px);
+    }
+}
+
+@media only screen and (min-width: 769px) {
+    .hide-desktop {
+        display: none !important;
     }
 }
 
@@ -2355,6 +2414,9 @@ video {
     .ad-queer,
     .ad-ally {
         width: calc(50% - 35px);
+    }
+    .books-grid > img {
+        width: 20%;
     }
 }
 

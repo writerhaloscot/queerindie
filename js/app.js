@@ -166,4 +166,12 @@ $(function () {
         $(this).parent().siblings().removeClass('open');
         $(this).parent().siblings().find('.accordion-body').slideUp(250);
     });
+    
+    
+    // LAZY LOAD IMAGES
+    $('.lazy-img').each(function(){
+        $(this).attr('src', $(this).attr('data-src'));
+        $(this).addClass('loaded');
+    });
+    
 });

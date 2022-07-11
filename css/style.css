@@ -601,6 +601,14 @@ video {
     letter-spacing: 0.02rem;
 }
 
+.press .link {
+    text-decoration: none;
+}
+
+.press .link i {
+    vertical-align: middle;
+}
+
 .link:hover {
     color: blue;
 }

@@ -117,6 +117,17 @@ video {
 }
 
 
+/* LAZY LOAD */
+
+.lazy-bg:not(.loaded) {
+    background: transparent;
+}
+
+.books-grid .lazy-img:not(.loaded) {
+    height: 205px;
+}
+
+
 /* LAYOUTS */
 
 .container {
@@ -492,6 +503,7 @@ video {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
     margin-left: -2px;
     margin-right: -2px;
 }
@@ -504,29 +516,6 @@ video {
 
 .books-section p {
     margin-bottom: 0.5rem;
-}
-
-.lazy-img:not(.loaded) {
-    height: 205px;
-    position: relative;
-}
-
-.lazy-img:not(.loaded):after {
-    content: '\f110';
-    font-family: 'Font Awesome 5 Free';
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
-    font-weight: 900;
-    font-size: 32px;
-    line-height: 205px;
-    position: absolute;
-    z-index: 1;
-    top: 2px;
-    left: 2px;
-    right: 2px;
-    bottom: 2px;
-    background: #eee;
-    color: #ccc;
 }
 
 
@@ -615,13 +604,16 @@ video {
 
 .map {
     min-height: 264px;
-    background-image: url('../img/background-313418-invert-min.jpg');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
     margin-top: -30px !important;
     padding-top: 0 !important;
     margin-bottom: 30px !important;
+}
+
+.map.loaded {
+    background-image: url('../img/background-313418-invert-min.jpg');
 }
 
 .author {
@@ -1291,10 +1283,13 @@ video {
 
 .who-we-are {
     padding: 40px 0 100px;
-    background-image: url(../img/fractal-2329803-min.jpg);
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+}
+
+.who-we-are.loaded {
+    background-image: url(../img/fractal-2329803-min.jpg);
 }
 
 .who-we-are .container {
@@ -1320,9 +1315,12 @@ video {
     margin-top: 30px;
     margin-bottom: 50px;
     background: black;
-    background-image: url(../img/rainbow-313415-min.jpg);
     background-size: 1500px auto;
     background-position: bottom center;
+}
+
+.promo.loaded {
+    background-image: url(../img/rainbow-313415-min.jpg);
 }
 
 .promo:after {
@@ -1420,7 +1418,6 @@ video {
     display: block;
     padding-top: 30%;
     margin-bottom: 1rem;
-    background-image: url('../img/promo-sulk-min.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -1432,17 +1429,21 @@ video {
     padding-top: 40%;
 }
 
-.promo-img.tellworthy {
+.promo-img.tellworthy.loaded {
     background-image: url('../img/promo-tellworthy-min.jpg');
 }
 
-.promo-img.fugitivepoems {
+.promo-img.fugitivepoems.loaded {
     margin-top: 1rem;
     background-image: url('../img/promo-fugitive-min.jpg');
 }
 
-.promo-img.cyberheart {
+.promo-img.cyberheart.loaded {
     background-image: url('../img/promo-cyberheart-min.jpg');
+}
+
+.promo-img.wccs.loaded {
+    background-image: url('../img/promo-wccs-min.jpg');
 }
 
 .promo iframe {
@@ -1538,10 +1539,13 @@ video {
     bottom: 0;
     right: 0;
     display: block !important;
-    background-image: url('../img/covers/covers-titles-min.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center center;
+}
+
+.footer-titles.loaded {
+    background-image: url('../img/covers/covers-titles-min.png');
 }
 
 
@@ -1586,11 +1590,14 @@ video {
 }
 
 .ad-title {
-    background-image: url(../img/rainbow-313415-min.jpg);
     background-size: 700% auto;
     background-position: center center;
     background-repeat: no-repeat;
     text-shadow: 0 0 4px white, 0 0 20px white
+}
+
+.ad-title.loaded {
+    background-image: url(../img/rainbow-313415-min.jpg);
 }
 
 .ad-queer,
@@ -1627,6 +1634,7 @@ video {
     text-align: right;
     background: blue;
     color: white !important;
+    margin-right: -1px;
 }
 
 .ad-reload:hover {
@@ -2181,7 +2189,6 @@ video {
     .promo .button.learn-more {
         bottom: 15px;
     }
-    .promo-img.sulkmedia,
     .promo-img.tellworthy,
     .promo-img.fugitivepoems {
         padding-top: 30%;

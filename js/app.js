@@ -34,34 +34,6 @@ $(function () {
     });
 
 
-    // LAZY LOAD VIDEO
-    $(document).ready(function () {
-
-        if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
-            console.log('mobile');
-        } else {
-            if ($('.hero-video-wrapper').length > 0) {
-                var v = $('.hero-video-wrapper').attr('data-src');
-                var h = '<video class="hero-video" autoplay loop muted preload="metadata"><source src="' + v + '" type="video/mp4"></video>';
-                $('.hero-video-wrapper').html(h);
-                setTimeout(function () {
-                    $('.hero-video-wrapper').fadeIn(2000);
-                }, 500);
-            }
-
-            if ($('.inner-video').length > 0) {
-                var v = $('.inner-video').attr('data-src');
-                var h = '<video autoplay loop muted preload="metadata"><source src="' + v + '" type="video/mp4"></video>';
-                $('.inner-video').html(h);
-                setTimeout(function () {
-                    $('.inner-video').fadeIn(2000);
-                }, 500);
-            }
-        }
-
-    });
-
-
     // DIRECTORY
     $('.peer-nav a').on('click', function (e) {
         e.preventDefault();
@@ -166,12 +138,40 @@ $(function () {
         $(this).parent().siblings().removeClass('open');
         $(this).parent().siblings().find('.accordion-body').slideUp(250);
     });
-    
-    
-    // LAZY LOAD IMAGES
-    $('.lazy-img').each(function(){
-        $(this).attr('src', $(this).attr('data-src'));
-        $(this).addClass('loaded');
+
+
+    // LAZY LOAD IMAGES (does after everything else loaded)
+    $(window).on('load', function () {
+        setTimeout(function () {
+            $('.lazy-bg').addClass('loaded');
+            
+            $('.lazy-img').each(function () {
+                $(this).attr('src', $(this).attr('data-src'));
+                $(this).addClass('loaded');
+            });
+            
+            if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+                console.log('mobile');
+            } else {
+                if ($('.hero-video-wrapper').length > 0) {
+                    var v = $('.hero-video-wrapper').attr('data-src');
+                    var h = '<video class="hero-video" autoplay loop muted preload="metadata"><source src="' + v + '" type="video/mp4"></video>';
+                    $('.hero-video-wrapper').html(h);
+                    setTimeout(function () {
+                        $('.hero-video-wrapper').fadeIn(2000);
+                    }, 500);
+                }
+                if ($('.inner-video').length > 0) {
+                    var v = $('.inner-video').attr('data-src');
+                    var h = '<video autoplay loop muted preload="metadata"><source src="' + v + '" type="video/mp4"></video>';
+                    $('.inner-video').html(h);
+                    setTimeout(function () {
+                        $('.inner-video').fadeIn(2000);
+                        $('.inner-video').addClass('loaded');
+                    }, 500);
+                }
+            }
+        }, 200);
     });
-    
+
 });

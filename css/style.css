@@ -2072,9 +2072,9 @@ video {
 /* GDPR COMPLIANCE */
 
 .cc_css_reboot.cc_dialog {
-    position: fixed;
-    bottom: 0;
-    top: auto;
+    position: fixed !important;
+    bottom: 0 !important;
+    top: auto !important;
     padding: 0;
     box-shadow: 0 0 30px blue;
 }
@@ -2095,6 +2095,7 @@ video {
 .cc_dialog_text {
     font-size: 13px !important;
     margin-bottom: 12px !important;
+    line-height: 1.2 !important;
 }
 
 .cc_css_reboot button {

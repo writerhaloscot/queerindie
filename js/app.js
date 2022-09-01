@@ -23,6 +23,10 @@ $(function () {
     $('#header').load(h);
     $('#footer').load(f);
     $('#lightbox').load(l);
+    
+    setTimeout(function () {
+        $('body').addClass('show');
+    }, 700);
 
 
     // SCROLL TO TOP

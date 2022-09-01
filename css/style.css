@@ -25,9 +25,13 @@
 
 body {
     background: #ffffff;
-    /* opacity: 1;
-    transition: 0.5s opacity ease;
-    transition-delay: 0.25s; */
+    opacity: 0;
+    transition: 0.25s opacity ease;
+    transition-delay: 0.25s;
+}
+
+body.show {
+    opacity: 1;
 }
 
 .wrapper {

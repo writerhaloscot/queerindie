@@ -2,24 +2,24 @@ $(function () {
 
 
     // LOAD INCLUDES
-    var m = '<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="UTF-8"><meta itemprop="name" content="Queer Indie"><meta itemprop="description" content="Queer Indie is a group of cross-genre authors writing queer/ally books. Every book has a home. Write the rainbow. This is YOUR story. Be your own identity.">';
-    var s = '<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400|Roboto:400,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">';
-    var v = 'img/favicon.png';
-    var c = 'css/style.css?v=1.2.2';
+    /* var m = '<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="UTF-8"><meta itemprop="name" content="Queer Indie"><meta itemprop="description" content="Queer Indie is a group of cross-genre authors writing queer/ally books. Every book has a home. Write the rainbow. This is YOUR story. Be your own identity.">';
+    var s = '<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400|Roboto:400,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" crossorigin="anonymous">'; */
+    // var v = 'img/favicon.png';
+    // var c = 'css/style.css?v=1.2.2';
     var h = 'includes/header.html';
     var f = 'includes/footer.html';
     var l = 'includes/lightbox.html';
 
     if (window.location.pathname != '/') {
-        v = '../' + v;
-        c = '../' + c;
+        // v = '../' + v;
+        // c = '../' + c;
         h = '../' + h;
         f = '../' + f;
         l = '../' + l;
     }
 
-    $('head').prepend(m + s);
-    $('head').append('<link rel="shortcut icon" href="' + v + '" type="image/x-icon" /><link rel="stylesheet" href="' + c + '" />');
+    // $('head').prepend(m + s);
+    // $('head').append('<link rel="shortcut icon" href="' + v + '" type="image/x-icon" /><link rel="stylesheet" href="' + c + '" />');
     $('#header').load(h);
     $('#footer').load(f);
     $('#lightbox').load(l);
@@ -144,12 +144,12 @@ $(function () {
     $(window).on('load', function () {
         setTimeout(function () {
             $('.lazy-bg').addClass('loaded');
-            
+
             $('.lazy-img').each(function () {
                 $(this).attr('src', $(this).attr('data-src'));
                 $(this).addClass('loaded');
             });
-            
+
             if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
                 console.log('mobile');
             } else {

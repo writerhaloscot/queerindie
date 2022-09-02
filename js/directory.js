@@ -211,10 +211,10 @@ $(function () {
 
         dirQLHTML += '<tr class="peer">';
         dirQLHTML += '<td class="peer-name">' + dirQL[i][0] + '</td>';
-        dirQLHTML += '<td class="peer-twitter" ><a href="https://twitter.com/' + dirQL[i][4].replace('@', '') + '" target="_blank"><span class="hide-SEO">' + dirQL[i][4] + '</span><i class="fab fa-twitter"></i></a></td>';
+        dirQLHTML += '<td class="peer-twitter" ><a href="https://twitter.com/' + dirQL[i][4].replace('@', '') + '" target="_blank"><span class="hide-SEO">' + dirQL[i][4] + '</span><span class="icon twitter"></span></a></td>';
         dirQLHTML += '<td class="peer-genre ' + dirQL[i][7] + ' ' + dirQL[i][6] + '">' + dirQL[i][3] + '</td>';
-        dirQLHTML += '<td class="peer-books"><a class="peer-title" href="#">' + dirQL[i][2] + '<i class="fas fa-plus fa-fw"></i><i class="fas fa-minus fa-fw"></i></a><span class="peer-pitch"><span class="peer-title-pitch">' + dirQL[i][2] + '</span><span class="peer-genre-pitch">' + dirQL[i][3] + '</span>' + dirQL[i][5] + '</span></td>';
-        dirQLHTML += '<td><a class="peer-buy" href="' + dirQL[i][1] + '" target="_blank">Buy <i class="fas fa-chevron-right"></i></a></td>';
+        dirQLHTML += '<td class="peer-books"><a class="peer-title" href="#">' + dirQL[i][2] + '<span class="peer-plus">&plus;</span><span class="peer-minus">&minus;</span></a><span class="peer-pitch"><span class="peer-title-pitch">' + dirQL[i][2] + '</span><span class="peer-genre-pitch">' + dirQL[i][3] + '</span>' + dirQL[i][5] + '</span></td>';
+        dirQLHTML += '<td><a class="peer-buy" href="' + dirQL[i][1] + '" target="_blank">Buy &rsaquo;</a></td>';
         dirQLHTML += '</tr>';
 
     }
@@ -226,10 +226,10 @@ $(function () {
 
         dirFrHTML += '<tr class="peer">';
         dirFrHTML += '<td class="peer-name">' + dirFr[j][0] + '</td>';
-        dirFrHTML += '<td class="peer-twitter" ><a href="https://twitter.com/' + dirFr[j][4].replace('@', '') + '" target="_blank"><span class="hide-SEO">' + dirFr[j][4] + '</span><i class="fab fa-twitter"></i></a></td>';
+        dirFrHTML += '<td class="peer-twitter" ><a href="https://twitter.com/' + dirFr[j][4].replace('@', '') + '" target="_blank"><span class="hide-SEO">' + dirFr[j][4] + '</span><span class="icon twitter"></span></a></td>';
         dirFrHTML += '<td class="peer-genre ' + dirFr[j][7] + ' ' + dirFr[j][6] + '">' + dirFr[j][3] + '</td>';
-        dirFrHTML += '<td class="peer-books"><a class="peer-title" href="#">' + dirFr[j][2] + '<i class="fas fa-plus fa-fw"></i><i class="fas fa-minus fa-fw"></i></a><span class="peer-pitch"><span class="peer-title-pitch">' + dirFr[j][2] + '</span><span class="peer-genre-pitch">' + dirFr[j][3] + '</span>' + dirFr[j][5] + '</span></td>';
-        dirFrHTML += '<td><a class="peer-buy" href="' + dirFr[j][1] + '" target="_blank">Buy <i class="fas fa-chevron-right"></i></a></td>';
+        dirFrHTML += '<td class="peer-books"><a class="peer-title" href="#">' + dirFr[j][2] + '<span class="peer-plus">&plus;</span><span class="peer-minus">&minus;</span></a><span class="peer-pitch"><span class="peer-title-pitch">' + dirFr[j][2] + '</span><span class="peer-genre-pitch">' + dirFr[j][3] + '</span>' + dirFr[j][5] + '</span></td>';
+        dirFrHTML += '<td><a class="peer-buy" href="' + dirFr[j][1] + '" target="_blank">Buy &rsaquo;</a></td>';
         dirFrHTML += '</tr>';
     }
 

@@ -257,8 +257,15 @@ video {
     padding-right: 0;
 }
 
-#header .social i {
-    font-size: 16px;
+#header .social svg {
+    height: 17px;
+    width: 17px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+#header a:hover svg {
+    fill: greenyellow !important;
 }
 
 
@@ -771,7 +778,8 @@ video {
     overflow: hidden;
 }
 
-.peer-title i {
+.peer-title .peer-plus,
+.peer-title .peer-minus {
     display: block;
     font-size: inherit;
     position: absolute;
@@ -780,17 +788,19 @@ video {
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
+    color: inherit;
+    font-style: normal;
 }
 
-.peer-title i.fa-minus {
+.peer-title .peer-minus {
     display: none;
 }
 
-.peer-title.open i.fa-minus {
+.peer-title.open .peer-minus {
     display: inline-block;
 }
 
-.peer-title.open i.fa-plus {
+.peer-title.open .peer-plus {
     display: none;
 }
 
@@ -953,61 +963,65 @@ video {
 }
 
 [class*=' genre-']:after {
-    font-family: 'Font Awesome 5 Free';
-    -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased;
+    content: '';
     display: inline-block;
-    font-style: normal;
-    font-variant: normal;
-    text-rendering: auto;
     line-height: 1;
-    font-weight: 900;
-    width: 20px;
+    height: 14px;
+    width: 30px;
     text-align: center;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .genre-love:after {
-    content: '\f004';
+    background-image: url('../img/icons/heart.svg');
 }
 
 .genre-speculative:after {
-    content: '\f005';
+    background-image: url('../img/icons/star.svg');
 }
 
 .genre-suspense:after {
-    content: '\f002';
+    background-image: url('../img/icons/magnifying-glass.svg');
 }
 
 .genre-nonfiction:after {
-    content: '\f02e';
+    background-image: url('../img/icons/bookmark.svg');
 }
 
 .genre-fiction:after {
-    content: '\f56b';
+    background-image: url('../img/icons/feather-pointed.svg');
 }
 
 .genre-suspense.genre-love:after {
-    content: '\f002\00a0\f004';
+    background-image: url('../img/icons/magnifying-glass.svg'), url('../img/icons/heart.svg');
+    background-position: left center, right center;
 }
 
 .genre-speculative.genre-love:after {
-    content: '\f005\00a0\f004';
+    background-image: url('../img/icons/star.svg'), url('../img/icons/heart.svg');
+    background-position: left center, right center;
 }
 
 .genre-speculative.genre-fiction:after {
-    content: '\f005\00a0\f56b';
+    background-image: url('../img/icons/star.svg'), url('../img/icons/feather-pointed.svg');
+    background-position: left center, right center;
 }
 
 .genre-suspense.genre-speculative:after {
-    content: '\f002\00a0\f005';
+    background-image: url('../img/icons/magnifying-glass.svg'), url('../img/icons/star.svg');
+    background-position: left center, right center;
 }
 
 .genre-fiction.genre-nonfiction:after {
-    content: '\f56b\00a0\f02e';
+    background-image: url('../img/icons/feather-pointed.svg'), url('../img/icons/bookmark.svg');
+    background-position: left center, right center;
 }
 
 .genre-fiction.genre-love:after {
-    content: '\f56b\00a0\f004';
+    background-image: url('../img/icons/feather-pointed.svg'), url('../img/icons/heart.svg');
+    background-position: left center, right center;
 }
 
 
@@ -1049,6 +1063,7 @@ video {
 .peer-btn[class*=' genre-']:after {
     left: 2px;
     margin-top: -1px;
+    width: 20px;
 }
 
 .peer-btn[class*=' age-']:before {
@@ -1514,8 +1529,7 @@ video {
     text-align: center !important;
     height: 40px !important;
     width: 40px !important;
-    line-height: 40px !important;
-    padding-top: 3px;
+    line-height: 38px !important;
     background-color: greenyellow !important;
     color: #000000 !important;
     transition: all 0.25s ease !important;
@@ -1645,6 +1659,10 @@ video {
     background: greenyellow;
 }
 
+.ad-reload:hover i {
+    filter: invert(100);
+}
+
 .ad-drawer span,
 .ad-drawer i {
     display: inline;
@@ -1655,16 +1673,6 @@ video {
     display: inline-block;
     font-size: 16px;
     margin-right: 4px;
-}
-
-.ad-queer a i,
-.ad-ally a i {
-    color: blue;
-}
-
-.ad-queer a:hover i,
-.ad-ally a:hover i {
-    color: greenyellow;
 }
 
 .ad-drawer span {
@@ -1783,12 +1791,13 @@ video {
     position: absolute;
     top: 0.75rem;
     right: 0.75rem;
-    line-height: 0;
+    line-height: 0.5;
     color: white;
+    text-decoration: none;
 }
 
-.lightbox-close i {
-    font-size: inherit;
+.lightbox-close:hover {
+    color: greenyellow;
 }
 
 .lightbox h2 {
@@ -1992,7 +2001,8 @@ video {
     color: #555555 !important;
 }
 
-.accordion-title > i.fas {
+.accordion-title > .acc-plus,
+.accordion-title > .acc-minus {
     display: block;
     color: inherit !important;
     position: absolute;
@@ -2003,12 +2013,12 @@ video {
     transform: translateY(-50%);
 }
 
-.accordion-title > i.fas.fa-minus,
-.accordion.open .accordion-title > i.fas.fa-plus {
+.accordion-title > .acc-minus,
+.accordion.open .accordion-title > .acc-plus {
     display: none;
 }
 
-.accordion.open .accordion-title > i.fas.fa-minus {
+.accordion.open .accordion-title > .acc-minus {
     display: block;
 }
 
@@ -2118,6 +2128,54 @@ video {
 
 
 /* END GDPR COMPLIANCE */
+
+
+/* ICONS */
+
+.icon {
+    display: inline-block;
+    vertical-align: middle;
+    height: 16px;
+    width: 20px;
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon.invert {
+    filter: invert(100);
+}
+
+.icon.twitter.loaded {
+    background-image: url('../img/icons/twitter.svg');
+}
+
+.icon.instagram.loaded {
+    background-image: url('../img/icons/instagram.svg');
+}
+
+.icon.facebook.loaded {
+    background-image: url('../img/icons/facebook-f.svg');
+}
+
+.icon.youtube.loaded {
+    background-image: url('../img/icons/youtube.svg');
+}
+
+.icon.cart.loaded {
+    background-image: url('../img/icons/cart-shopping.svg');
+}
+
+.icon.reload.loaded {
+    background-image: url('../img/icons/arrows-rotate.svg');
+}
+
+.icon.reader.loaded {
+    background-image: url('../img/icons/book-open-reader.svg');
+}
+
+
+/* END ICONS */
 
 
 /* RESPONSIVE */
@@ -2464,6 +2522,7 @@ video {
     .ad-queer-twitter i,
     .ad-ally-twitter i {
         font-size: 10px;
+        width: 12px;
     }
     .ad-queer-title,
     .ad-ally-title,

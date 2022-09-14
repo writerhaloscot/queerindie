@@ -521,7 +521,7 @@ video {
 .books-grid > img {
     display: block;
     padding: 2px;
-    width: calc(100% / 9);
+    width: calc(100% / 11);
 }
 
 .books-section p {

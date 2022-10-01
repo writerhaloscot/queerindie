@@ -237,11 +237,13 @@ video {
     cursor: pointer;
 }
 
-#header .inner:first-of-type {
+#header .inner:first-of-type,
+#header .inner:nth-of-type(2) {
     text-align: right;
 }
 
-#header .inner:last-of-type {
+#header .inner:last-of-type,
+#header .inner:nth-last-of-type(2) {
     text-align: left;
 }
 
@@ -591,6 +593,24 @@ video {
 .button.big span {
     font: inherit;
     color: inherit;
+}
+
+.button-group {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.button-group .button {
+    display: block;
+    margin-bottom: 4px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    font-size: .65rem;
+}
+
+.button-group .button:last-of-type {
+    margin-bottom: 0;
 }
 
 .link {
@@ -2286,6 +2306,9 @@ video {
     .hide-mobile {
         display: none !important;
     }
+    #header a {
+        padding: 10px 5px;
+    }
     .hero {
         padding: 40px 0;
         background-size: 1400px auto;
@@ -2553,5 +2576,24 @@ video {
         max-width: 200px;
         margin-left: auto;
         margin-right: auto;
+    }
+    #header a.inner {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    #header a.inner:nth-of-type(2),
+    #header a.inner:nth-last-of-type(2) {
+        margin-top: -20px;
+    }
+    #header a.inner:first-of-type,
+    #header a.inner:last-of-type {
+        position: absolute;
+        top: 30px;
+    }
+    #header a.inner:first-of-type {
+        left: calc(50% - 125px);
+    }
+    #header a.inner:last-of-type {
+        right: calc(50% - 125px);
     }
 }

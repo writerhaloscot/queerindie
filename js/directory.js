@@ -128,7 +128,8 @@ $(function () {
         ['Amy Campbell','https://www.amycampbell.info/my-books','Tales of the Outlaw Mages','Epic Fantasy','@rawrbear','Unless this outlaw mage tames his magic, everyone he cares about will be crushed by the enemy.','genre-speculative','age-adult'],
         ['Kevin Goode-Lee','https://www.amazon.com/dp/B09KVDCWMF','The Kai Logan Series','Mystery','@KaiLogan90','A casino dealer bets his life to find the truth!','genre-suspense','age-adult'],
         ['Beverly L. Anderson','https://bit.ly/phoenixreal','Doctor&rsquo;s Training Trilogy, Legacy of the Phoenix','Fantasy and Erotic Romance','@phoenixreal','A wider world than Kieran Sung ever imagined exists as the autistic doctor is drawn into the midst of a mob war.','genre-speculative genre-love','age-adult'],
-['M.A. Quigley','https://www.amazon.com.au/s?k=the+complexities+of+love&ref=nb_sb_noss ','The Complexities of Love','LGBTQ+','@MQuigley1963','All Mark yearns for is for Dave to return his love, but will that happen, or will he find someone else?','genre-fiction','age-adult']
+['M.A. Quigley','https://www.amazon.com.au/s?k=the+complexities+of+love&ref=nb_sb_noss ','The Complexities of Love','LGBTQ+','@MQuigley1963','All Mark yearns for is for Dave to return his love, but will that happen, or will he find someone else?','genre-fiction','age-adult'],
+        ['Ryder O. Cox','https://ryderocox.com/books-by-ryder-o-cox/','Tainted Belief, Killer Love, Discovery (Inheritance #1), Practice Makes Perfect (Their 1st Time #1)','Erotic Romance (M/M)','@RyderOCox','My books are dark, kinky, erotic romance (M/M). For me, I&rsquo;m just a silly, pansexual, polyamorous, demisexual, nonbinary creature who enjoys telling sexy stories with and for my friends. ','genre-love','age-adult']
     ];
 
 

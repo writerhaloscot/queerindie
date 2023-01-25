@@ -198,7 +198,8 @@ $(function () {
         ['SV Filice','https://www.amazon.com/gp/aw/d/B08FC9B49T','The Summoning, The Prophecy (Moral Bloodlines Trilogy)','YA/NA Fantasy','@svfilice','A rich urban fantasy surrounding a camp for angel descendants and the fight to balance morality','genre-speculative','age-ya'],
         ['Anna J Walner','https://Annajwalner.com/garkain','Garkain: Book One of The Uluru Legacy Series','YA Fantasy','@AnnaJWalner','Defy your expectations and enter a world lost for centuries. A secret society exists in Australia, hidden to human eyes. A place where vampires still exist. A girl in search of family will find more than she ever thought possible.','genre-speculative','age-ya'],
         ['Cara Roman','https://www.amazon.com/Cara-Roman/e/B01MUFLHP6','Without a Wolf, Running From the Wolf, Definitely Memorable, Still Yours ','Romance ','@CaraRomanAuthor','Steamy sexy romance with happy ever afters ','genre-love','age-adult'],
-        ['Arti','https://instagram.com/arts_by_arti','Arts by Arti','Poetry and nonfiction short pieces','@','Poetic arts','genre-fiction genre-nonfiction','age-adult']
+        ['Arti','https://instagram.com/arts_by_arti','Arts by Arti','Poetry and nonfiction short pieces','@','Poetic arts','genre-fiction genre-nonfiction','age-adult'],
+        ['Rose J. Fairchild ','https://www.rosejfairchild.com','Short Stories','Adult Dark Fiction','@RoseJFairchild','Worlds painted in shades of lust: for revenge, freedom, love, power, and fleshy things.','genre-speculative genre-love','age-adult']
     ];
 
 

@@ -5,7 +5,7 @@ $(function () {
     /* var m = '<meta http-equiv="X-UA-Compatible" content="IE=edge" /><meta name="viewport" content="width=device-width, initial-scale=1"><meta charset="UTF-8"><meta itemprop="name" content="Queer Indie"><meta itemprop="description" content="Queer Indie is a group of cross-genre authors writing queer/ally books. Every book has a home. Write the rainbow. This is YOUR story. Be your own identity.">';
     var s = '<link href="https://fonts.googleapis.com/css?family=Big+Shoulders+Text:400|Roboto:400,700&display=swap" rel="stylesheet">'; */
     // var v = 'img/favicon.png';
-    // var c = 'css/style.css?v=1.2.2';
+    // var c = 'css/style.css?v=1.2.3';
     var h = 'includes/header.html';
     var f = 'includes/footer.html';
     var l = 'includes/lightbox.html';
